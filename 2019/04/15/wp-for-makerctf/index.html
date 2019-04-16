@@ -1,18 +1,436 @@
-extends views/main.pug
+<!DOCTYPE html>
+<html lang="en">
 
-block head
-  title
-    = page.title + ' - ' + config.title
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="xBT4GhYoi5qRD5tr338pgPM5OWHHIDR6mNg1a3euekI">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keyword" content="">
+    <link rel="shortcut icon" href="/img/ironman-draw.png">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <title>
+        
+          wp_for_makerctf - undefined
+        
+    </title>
 
-block main
-  include mixins/post.pug
-  +post(page, 'post')
+    <link rel="canonical" href="http://yoursite.com/2019/04/15/wp-for-makerctf/">
 
-  //-
-  include plugins/reward.pug
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-  //- comment
-  if theme.comment_plugin == 'valine'
-    include plugins/valine.pug
-  else
-    include plugins/livere.pug
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="/css/beantech.min.css">
+    
+    <!-- Pygments Highlight CSS -->
+    <link rel="stylesheet" href="/css/highlight.css">
+
+    <link rel="stylesheet" href="/css/widget.css">
+
+    <link rel="stylesheet" href="/css/rocket.css">
+
+    <link rel="stylesheet" href="/css/signature.css">
+
+    <link rel="stylesheet" href="/css/toc.css">
+
+    <!-- Custom Fonts -->
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <!-- Hux change font-awesome CDN to qiniu -->
+    <link href="https://cdn.staticfile.org/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Hux Delete, sad but pending in China
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/
+    css'>
+    -->
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ga & ba script hoook -->
+    <script></script>
+</head>
+
+
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="">
+	<!-- Modified by Yu-Hsuan Yen -->
+<!-- Post Header -->
+<style type="text/css">
+    header.intro-header{
+        
+            background-image: url('')
+            /*post*/
+        
+    }
+    
+</style>
+
+<header class="intro-header">
+    <!-- Signature -->
+    <div id="signature">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                
+                    <div class="post-heading">
+                        <div class="tags">
+                            
+                        </div>
+                        <h1>wp_for_makerctf</h1>
+                        <h2 class="subheading"></h2>
+                        <span class="meta">
+                            Posted by John Doe on
+                            2019-04-15
+                        </span>
+                    </div>
+                
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+	
+    <!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">d1lute的blog</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<script>
+    // Drop Bootstarp low-performance Navbar
+    // Use customize navbar with high-quality material design animation
+    // in high-perf jank-free CSS3 implementation
+    var $body   = document.body;
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    $toggle.addEventListener('click', handleMagic)
+    function handleMagic(e){
+        if ($navbar.className.indexOf('in') > 0) {
+        // CLOSE
+            $navbar.className = " ";
+            // wait until animation end.
+            setTimeout(function(){
+                // prevent frequently toggle
+                if($navbar.className.indexOf('in') < 0) {
+                    $collapse.style.height = "0px"
+                }
+            },400)
+        }else{
+        // OPEN
+            $collapse.style.height = "auto"
+            $navbar.className += " in";
+        }
+    }
+</script>
+
+
+    <!-- Main Content -->
+    <!-- Modify by Yu-Hsuan Yen -->
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+            <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <h1 id="crypto"><a href="#crypto" class="headerlink" title="crypto"></a>crypto</h1><h2 id="1、easy-rsa"><a href="#1、easy-rsa" class="headerlink" title="1、easy_rsa"></a>1、easy_rsa</h2><h3 id="1-1、先读一下n"><a href="#1-1、先读一下n" class="headerlink" title="1.1、先读一下n"></a>1.1、先读一下n</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png" alt="微信图片_20181012144505"></p>
+<p>n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F</p>
+<h3 id="1-2、写个脚本转成十进制"><a href="#1-2、写个脚本转成十进制" class="headerlink" title="1.2、写个脚本转成十进制"></a>1.2、写个脚本转成十进制</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/2.png" alt="微信图片_20181012144505"></p>
+<p>n=184958528317971463827449839591526689799653355547671707738065461546785649065519</p>
+<h3 id="1-3、用yafu分解一下"><a href="#1-3、用yafu分解一下" class="headerlink" title="1.3、用yafu分解一下"></a>1.3、用yafu分解一下</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/3.png" alt="微信图片_20181012144505"></p>
+<p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/4.png" alt="微信图片_20181012144505"></p>
+<p>不妨使得</p>
+<p>p=420226057252427765877741059207519510621</p>
+<p>q=440140550843727826962832356360132665339</p>
+<h3 id="1-4、写一个脚本解出私钥然后存成pem文件"><a href="#1-4、写一个脚本解出私钥然后存成pem文件" class="headerlink" title="1.4、写一个脚本解出私钥然后存成pem文件"></a>1.4、写一个脚本解出私钥然后存成pem文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> Crypto.PublicKey <span class="keyword">import</span> RSA</span><br><span class="line"></span><br><span class="line">keypair = RSA.generate(<span class="number">1024</span>)</span><br><span class="line"></span><br><span class="line">keypair.p =<span class="number">440140550843727826962832356360132665339</span></span><br><span class="line"></span><br><span class="line">keypair.q =<span class="number">420226057252427765877741059207519510621</span></span><br><span class="line"></span><br><span class="line">keypair.e = <span class="number">65537</span></span><br><span class="line"></span><br><span class="line">keypair.n = keypair.p * keypair.q</span><br><span class="line"></span><br><span class="line">Qn = long((keypair.p<span class="number">-1</span>) * (keypair.q<span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (<span class="keyword">True</span>):</span><br><span class="line">x = (Qn * i ) + <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> (x % keypair.e == <span class="number">0</span>):</span><br><span class="line">keypair.d = x / keypair.e</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">private = open(<span class="string">'private.pem'</span>,<span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">private.write(keypair.exportKey())</span><br><span class="line"></span><br><span class="line">private.close()</span><br></pre></td></tr></table></figure>
+<h3 id="1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密"><a href="#1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密" class="headerlink" title="1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密"></a>1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/5.png" alt="微信图片_20181012144505"></p>
+<h2 id="2、B-amp-C"><a href="#2、B-amp-C" class="headerlink" title="2、B&amp;C"></a>2、B&amp;C</h2><h3 id="2-1、看到密码，由题目想到base家族以及变异凯撒"><a href="#2-1、看到密码，由题目想到base家族以及变异凯撒" class="headerlink" title="2.1、看到密码，由题目想到base家族以及变异凯撒"></a>2.1、看到密码，由题目想到base家族以及变异凯撒</h3><p>LJDU433EGJNDIWTKNQ4GCWCCORIW2YZ5</p>
+<h3 id="2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"><a href="#2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到" class="headerlink" title="2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"></a>2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到</h3><p>ZGNod2Z4Zjl8aXBtQmc=</p>
+<h3 id="2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"><a href="#2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到" class="headerlink" title="2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"></a>2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到</h3><p>dchwfxf9|ipmBg</p>
+<h3 id="2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"><a href="#2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关" class="headerlink" title="2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"></a>2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关</h3><p>猜测是base开头的flag</p>
+<p>d-b=2</p>
+<p>c-a=-2</p>
+<p>h-s=-10</p>
+<p>w-e=14</p>
+<p>并没有找到规律,</p>
+<p>猜测是Caesar开头</p>
+<p>d-c=1</p>
+<p>c-a=2</p>
+<p>h-e=3</p>
+<p>w-s=4</p>
+<h3 id="2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"><a href="#2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密" class="headerlink" title="2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"></a>2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> a[<span class="number">100</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%s"</span>, a);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; a[i] != <span class="number">0</span>; i++) &#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%c"</span>, a[i] - i - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-6、运行脚本-得到flag。"><a href="#2-6、运行脚本-得到flag。" class="headerlink" title="2.6、运行脚本,得到flag。"></a>2.6、运行脚本,得到flag。</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/6.png" alt="微信图片_20181012144505"></p>
+<h2 id="3、base-amp-fez"><a href="#3、base-amp-fez" class="headerlink" title="3、base&amp;fez"></a>3、base&amp;fez</h2><h3 id="3-1打开题目看到源码"><a href="#3-1打开题目看到源码" class="headerlink" title="3.1打开题目看到源码"></a>3.1打开题目看到源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x,k)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> xor(xor(x,k),<span class="number">7</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">round</span><span class="params">(M,K)</span>:</span></span><br><span class="line">    L=M[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">    R=M[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">    new_l=R</span><br><span class="line">    new_r=xor(xor(R,L),K)</span><br><span class="line">    <span class="keyword">return</span> new_l+new_r</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">festal</span><span class="params">(m,K)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> K:</span><br><span class="line">        m=round(m,i) </span><br><span class="line">    <span class="keyword">return</span> m</span><br><span class="line"></span><br><span class="line">K=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">7</span>):</span><br><span class="line">    K.append(os.urandom(<span class="number">27</span>))</span><br><span class="line">m=open(<span class="string">"base_and_fez"</span>,<span class="string">"rb"</span>).read()</span><br><span class="line"><span class="keyword">print</span> (len(m))</span><br><span class="line"><span class="keyword">assert</span> len(m)&lt;=<span class="number">54</span></span><br><span class="line">m+=os.urandom(<span class="number">54</span>-len(m)) </span><br><span class="line"></span><br><span class="line">test=os.urandom(<span class="number">54</span>)</span><br><span class="line"><span class="keyword">print</span> (test.encode(<span class="string">"hex"</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(test,K).encode(<span class="string">"hex"</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(m,K).encode(<span class="string">"hex"</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"><a href="#3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题" class="headerlink" title="3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"></a>3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题</h3><p>  观察函数，首先进行了七次round，不妨设被加密明文前半部分为m1，后半部分为m2</p>
+<p>单看m1和m2的变换，有如下结果(将m1xorm2表示为m1m2,且将x xor x直接消去)</p>
+<p>m1         m2</p>
+<p>m2         m1m2</p>
+<p>m1m2   m1</p>
+<p>m1         m2</p>
+<p>m2         m1m2</p>
+<p>m1m2   m1</p>
+<p>m1         m2</p>
+<p>m2         m1m2</p>
+<p>因此经过加密后，原文为m1+m2的明文，被加密为了m2Kj+m1m2Ki（其中Kj和Ki为K的七个部分进行的某种乘积组合，由于可以消掉，所以不去推导）</p>
+<p>因此将TEXT看作m1+m2</p>
+<p>将明文看作M1+M2</p>
+<p>resault中的三个字符串分别为</p>
+<p>m1+m2</p>
+<p>m2Kj+m1m2Ki</p>
+<p>M2Kj+M1M2Ki</p>
+<p>解密思路为</p>
+<p>M2=M2Kj  xor   m2Kj   xor   m2</p>
+<p>M1=(M1M2Ki xor M2Kj) xor(m1m2Ki xor m2Kj) xor m1</p>
+<h3 id="3-3分析完思路，通过脚本进行解密"><a href="#3-3分析完思路，通过脚本进行解密" class="headerlink" title="3.3分析完思路，通过脚本进行解密"></a>3.3分析完思路，通过脚本进行解密</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">b=<span class="string">"deec78f07a169673679822c2b06c3b96f9fb225dc5404b532dd8b04a992774e8ec76ac7f6322f3492534033dd5953f06d601c14d3ad3"</span></span><br><span class="line">c=<span class="string">"aa5467efd0b871e3e5fc89f146f766b82b5145c005a4872fd1ef11bf0505027fc7f0eb0db49501832831c7b204492dcdf4a6f0e6d110"</span></span><br><span class="line">m=<span class="string">"c50a135a56c000a4c394549407bb2cab1349ebdc4ee31e0601e33b47d3752381fc82b3bd37fa65d9a9740890fe25f6e8ba9135d3499f"</span></span><br><span class="line">c=c.decode(<span class="string">"hex"</span>)</span><br><span class="line">b=b.decode(<span class="string">"hex"</span>)</span><br><span class="line">m=m.decode(<span class="string">"hex"</span>)</span><br><span class="line"></span><br><span class="line">c1=c[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">c2=c[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">b1=b[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">b2=b[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">m1=m[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">m2=m[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">x=xor(xor(xor(b1,b2),xor(c1,c2)),m1)+xor(xor(b1,c1),m2)</span><br><span class="line"><span class="keyword">print</span> (x)</span><br><span class="line"></span><br><span class="line">o=open(<span class="string">"base_and_fez"</span>,<span class="string">"wb"</span>)</span><br><span class="line">o.write(x)</span><br></pre></td></tr></table></figure>
+<h3 id="3-4解码后得到"><a href="#3-4解码后得到" class="headerlink" title="3.4解码后得到"></a>3.4解码后得到</h3><p>D..3kEas3’HU;-tAN2PSE%uKV?Y3kj&lt;+Re#?SQV/2)&amp;BTBk(^]I/~&gt;</p>
+<h3 id="3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"><a href="#3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag" class="headerlink" title="3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"></a>3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag</h3><p>makerctf{Ba4e85_p1us_fesTe1l_1s_50_nice_}</p>
+<h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><h2 id="1、究极脑洞题"><a href="#1、究极脑洞题" class="headerlink" title="1、究极脑洞题"></a>1、究极脑洞题</h2><h3 id="1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号"><a href="#1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号" class="headerlink" title="1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号"></a>1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号</h3><p>316f526f614766766855384d4b73396a3865316f716d41<br>hint：2698852664</p>
+<h3 id="1-2、在qq中搜qq号，看到"><a href="#1-2、在qq中搜qq号，看到" class="headerlink" title="1.2、在qq中搜qq号，看到"></a>1.2、在qq中搜qq号，看到</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/7.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"><a href="#1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到" class="headerlink" title="1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"></a>1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到</h3><p>1oRoaGfvhU8MKs9j8e1oqmA</p>
+<h3 id="1-4将其加上百度网盘后缀，得到一个百度云链接"><a href="#1-4将其加上百度网盘后缀，得到一个百度云链接" class="headerlink" title="1.4将其加上百度网盘后缀，得到一个百度云链接"></a>1.4将其加上百度网盘后缀，得到一个百度云链接</h3><p><a href="https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA" target="_blank" rel="noopener">https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA</a></p>
+<p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/8.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"><a href="#1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint" class="headerlink" title="1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"></a>1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/9.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-6看到-猜测base64，解密后得到"><a href="#1-6看到-猜测base64，解密后得到" class="headerlink" title="1.6看到=猜测base64，解密后得到"></a>1.6看到=猜测base64，解密后得到</h3><p>hint:password is from the group leader</p>
+<h3 id="1-7去找群主"><a href="#1-7去找群主" class="headerlink" title="1.7去找群主"></a>1.7去找群主</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/10.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-8尝试用qq号解密，成功得到"><a href="#1-8尝试用qq号解密，成功得到" class="headerlink" title="1.8尝试用qq号解密，成功得到"></a>1.8尝试用qq号解密，成功得到</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/11.png" alt="微信图片_20181012144505"></p>
+<p>用hex打开后得到flag</p>
+<h2 id="2、backward"><a href="#2、backward" class="headerlink" title="2、backward"></a>2、backward</h2><h3 id="2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"><a href="#2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想" class="headerlink" title="2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"></a>2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/12.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-2写脚本"><a href="#2-2写脚本" class="headerlink" title="2.2写脚本"></a>2.2写脚本</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=open(<span class="string">'backward.png'</span>,<span class="string">'rb'</span>).read()</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'rst.txt'</span>, <span class="string">'w+'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">-2</span>,<span class="number">-89404</span>,<span class="number">-2</span>):</span><br><span class="line">        f.write(a[i<span class="number">-2</span>:i:<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<p>得到新的文件</p>
+<h3 id="2-3将解出的结果利用hex形成新的png文件"><a href="#2-3将解出的结果利用hex形成新的png文件" class="headerlink" title="2.3将解出的结果利用hex形成新的png文件"></a>2.3将解出的结果利用hex形成新的png文件</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/13.png" alt="微信图片_20181012144505"></p>
+<h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h2 id="1、签到题"><a href="#1、签到题" class="headerlink" title="1、签到题"></a>1、签到题</h2><h3 id="1-1打开链接，看到源码"><a href="#1-1打开链接，看到源码" class="headerlink" title="1.1打开链接，看到源码"></a>1.1打开链接，看到源码</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/14.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-2查看源码无果后尝试抓包"><a href="#1-2查看源码无果后尝试抓包" class="headerlink" title="1.2查看源码无果后尝试抓包"></a>1.2查看源码无果后尝试抓包</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/15.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-3前往提示所在的链接"><a href="#1-3前往提示所在的链接" class="headerlink" title="1.3前往提示所在的链接"></a>1.3前往提示所在的链接</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/16.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"><a href="#1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload" class="headerlink" title="1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"></a>1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/17.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-5成功得到flag"><a href="#1-5成功得到flag" class="headerlink" title="1.5成功得到flag"></a>1.5成功得到flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/18.png" alt="微信图片_20181012144505"></p>
+<h2 id="2、easy-eval"><a href="#2、easy-eval" class="headerlink" title="2、easy_eval"></a>2、easy_eval</h2><h3 id="2-1打开链接，看到源码"><a href="#2-1打开链接，看到源码" class="headerlink" title="2.1打开链接，看到源码"></a>2.1打开链接，看到源码</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/19.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"><a href="#2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag" class="headerlink" title="2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"></a>2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/20.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-3得到flag"><a href="#2-3得到flag" class="headerlink" title="2.3得到flag"></a>2.3得到flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/21.png" alt="微信图片_20181012144505"></p>
+
+                
+
+                <hr>
+                <!-- Pager -->
+                <ul class="pager">
+                    
+                    
+                        <li class="next">
+                            <a href="/2018/10/17/在ubuntu虚拟机上搭建php运行环境/" data-toggle="tooltip" data-placement="top" title="ubuntu虚拟机上搭建php运行环境">Next Post &rarr;</a>
+                        </li>
+                    
+                </ul>
+
+                <!-- duoshuo Share start -->
+                
+                <!-- 多说 Share end-->
+
+                <!-- 多说评论框 start -->
+                
+                <!-- 多说评论框 end -->
+
+                <!-- disqus comment start -->
+                
+                <!-- disqus comment end -->
+            </div>
+            
+            <!-- Tabe of Content -->
+            <!-- Table of Contents -->
+
+                
+            <!-- Sidebar Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
+
+                <!-- Friends Blog -->
+                
+            </div>
+        </div>
+    </div>
+</article>
+
+
+
+
+
+
+
+
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="list-inline text-center">
+                
+                
+                
+
+                
+
+                
+
+                
+
+                
+
+                </ul>
+                <p class="copyright text-muted">
+                    Copyright &copy; John Doe 2019 
+                    <br>
+                    Theme by <a href="http://huangxuan.me">Hux</a> 
+                    <span style="display: inline-block; margin: 0 5px;">
+                        <i class="fa fa-heart"></i>
+                    </span> 
+                    re-Ported by <a href="http://beantech.org">BeanTech</a> | 
+                    <iframe style="margin-left: 2px; margin-bottom:-5px;" frameborder="0" scrolling="0" width="91px" height="20px" src="https://ghbtns.com/github-btn.html?user=YenYuHsuan&repo=hexo-theme-beantech&type=star&count=true">
+                    </iframe>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- jQuery -->
+<script src="/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="/js/bootstrap.min.js"></script>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/hux-blog.min.js"></script>
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!-- 
+     Because of the native support for backtick-style fenced code blocks 
+     right within the Markdown is landed in Github Pages, 
+     From V1.6, There is no need for Highlight.js, 
+     so Huxblog drops it officially.
+
+     - https://github.com/blog/2100-github-pages-now-faster-and-simpler-with-jekyll-3-0  
+     - https://help.github.com/articles/creating-and-highlighting-code-blocks/    
+-->
+<!--
+    <script>
+        async("http://cdn.bootcss.com/highlight.js/8.6/highlight.min.js", function(){
+            hljs.initHighlightingOnLoad();
+        })
+    </script>
+    <link href="http://cdn.bootcss.com/highlight.js/8.6/styles/github.min.css" rel="stylesheet">
+-->
+
+
+<!-- jquery.tagcloud.js -->
+<script>
+    // only load tagcloud.js in tag.html
+    if($('#tag_cloud').length !== 0){
+        async("http://yoursite.com/js/jquery.tagcloud.js",function(){
+            $.fn.tagcloud.defaults = {
+                //size: {start: 1, end: 1, unit: 'em'},
+                color: {start: '#bbbbee', end: '#0085a1'},
+            };
+            $('#tag_cloud a').tagcloud();
+        })
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("https://cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+<!-- Google Analytics -->
+
+
+
+
+<!-- Baidu Tongji -->
+
+
+
+
+
+
+	<a id="rocket" href="#top" class=""></a>
+	<script type="text/javascript" src="/js/totop.js?v=1.0.0" async=""></script>
+    <script type="text/javascript" src="/js/toc.js?v=1.0.0" async=""></script>
+<!-- Image to hack wechat -->
+<img src="http://yoursite.com/img/icon_wechat.png" width="0" height="0" />
+<!-- Migrate from head to bottom, no longer block render and still work -->
+
+</body>
+
+</html>

@@ -476,6 +476,75 @@
 
 
   
+    <article id="post-搭建个人博客" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2018/09/25/搭建个人博客/" class="article-date">
+      <time datetime="2018-09-25T13:14:34.000Z" itemprop="datePublished">2018-09-25</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/25/搭建个人博客/">搭建个人博客</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="搭建一个个人博客"><a href="#搭建一个个人博客" class="headerlink" title="搭建一个个人博客"></a>搭建一个个人博客</h1><h2 id="1-先在电脑上找到分配一个文件夹准备给blog"><a href="#1-先在电脑上找到分配一个文件夹准备给blog" class="headerlink" title="1 先在电脑上找到分配一个文件夹准备给blog"></a>1 先在电脑上找到分配一个文件夹准备给blog</h2><h2 id="2-注册github账号，但是可惜卡在了step1"><a href="#2-注册github账号，但是可惜卡在了step1" class="headerlink" title="2 注册github账号，但是可惜卡在了step1"></a>2 注册github账号，但是可惜卡在了step1</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/15.png" alt="1537621346512"></p>
+<h3 id="3用vpn登上"><a href="#3用vpn登上" class="headerlink" title="3用vpn登上"></a>3用vpn登上</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/16.png" alt="屏幕截图(3)"></p>
+<h2 id="4成功注册"><a href="#4成功注册" class="headerlink" title="4成功注册"></a>4成功注册<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/17.png" alt="微信图片_20180923083830"></h2><h2 id="5-新建一个工程"><a href="#5-新建一个工程" class="headerlink" title="5 新建一个工程"></a>5 新建一个工程</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/18.png" alt="微信图片_20180923213411"></p>
+<h2 id="6-下载并安装git"><a href="#6-下载并安装git" class="headerlink" title="6 下载并安装git"></a>6 下载并安装git</h2><p><a href="https://github.com/git-for-windows/git/releases/download/v2.19.0.windows.1/Git-2.19.0-64-bit.exe" target="_blank" rel="noopener">git下载地址</a></p>
+<h2 id="7-下载并安装nodejs"><a href="#7-下载并安装nodejs" class="headerlink" title="7 下载并安装nodejs"></a>7 下载并安装nodejs</h2><p><a href="https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi" target="_blank" rel="noopener">nodejs下载地址</a></p>
+<h2 id="8-安装hexo"><a href="#8-安装hexo" class="headerlink" title="8 安装hexo"></a>8 安装hexo</h2><h3 id="8-1先创建一个blog文件夹"><a href="#8-1先创建一个blog文件夹" class="headerlink" title="8.1先创建一个blog文件夹"></a>8.1先创建一个blog文件夹<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/19.png" alt="微信图片_20180923213937"></h3><h3 id="8-2使用cmd进行安装"><a href="#8-2使用cmd进行安装" class="headerlink" title="8.2使用cmd进行安装"></a>8.2使用cmd进行安装</h3><h3 id="8-3全局配置到淘宝源npm-config-set-registry-https-registry-npm-taobao-org（这个源比较稳定，也可以使用默认的）"><a href="#8-3全局配置到淘宝源npm-config-set-registry-https-registry-npm-taobao-org（这个源比较稳定，也可以使用默认的）" class="headerlink" title="8.3全局配置到淘宝源npm config set registry https://registry.npm.taobao.org（这个源比较稳定，也可以使用默认的）"></a>8.3全局配置到淘宝源<code>npm config set registry https://registry.npm.taobao.org</code>（这个源比较稳定，也可以使用默认的）</h3><h2 id="8-4设置全局配置user-name和user-email"><a href="#8-4设置全局配置user-name和user-email" class="headerlink" title="8.4设置全局配置user.name和user.email"></a>8.4设置全局配置user.name和user.email</h2><p><code>git config –-global user.name “id”</code><br> <code>git config –-global user.email “youremail@qq.com”</code></p>
+<h3 id="8-5生成SSH密钥设置到Github-需先设置user-name和user-email"><a href="#8-5生成SSH密钥设置到Github-需先设置user-name和user-email" class="headerlink" title="8.5生成SSH密钥设置到Github(需先设置user.name和user.email)"></a>8.5生成SSH密钥设置到Github(需先设置user.name和user.email)</h3><p><code>cd ~/.ssh</code><br><code>ssh-keygen -t rsa -C “youremail@qq.com”</code></p>
+<h3 id="8-6获取ssh密钥"><a href="#8-6获取ssh密钥" class="headerlink" title="8.6获取ssh密钥"></a>8.6获取ssh密钥</h3><p><code>cat id_rsa.pub</code></p>
+<h3 id="8-7输入github中"><a href="#8-7输入github中" class="headerlink" title="8.7输入github中"></a>8.7输入github中<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/20.png" alt="微信图片_20180923235427"></h3><h3 id="8-8检查一下是否成功"><a href="#8-8检查一下是否成功" class="headerlink" title="8.8检查一下是否成功"></a>8.8检查一下是否成功</h3><p><code>ssh -T git@github.com</code></p>
+<h3 id="8-9正式开始安装Hexo"><a href="#8-9正式开始安装Hexo" class="headerlink" title="8.9正式开始安装Hexo"></a>8.9正式开始安装Hexo</h3><p>  <code>cd /</code><br>  <code>pwd /</code><br><code>npm install hexo-cli -g</code>  </p>
+<p> <code>cd /</code><br><code>hexo init Hexo</code><br><code>cd /Hexo</code><br><code>npm install</code><br><code>hexo generate</code><br><code>hexo sever</code></p>
+<h3 id="8-10安装部署到github插件依赖"><a href="#8-10安装部署到github插件依赖" class="headerlink" title="8.10安装部署到github插件依赖"></a>8.10安装部署到github插件依赖</h3><p><code>npm install –save hexo-deployer-git</code></p>
+<h3 id="8-11更改-config-yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）"><a href="#8-11更改-config-yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）" class="headerlink" title="8.11更改_config.yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）"></a>8.11更改_config.yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）</h3><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:id/id.github.io.git  //（改成自己的用户名和用户名加域名）<br>  branch: master</p>
+<h3 id="8-12将gitbash部署hexo到github"><a href="#8-12将gitbash部署hexo到github" class="headerlink" title="8.12将gitbash部署hexo到github"></a>8.12将gitbash部署hexo到github</h3><p><code>hexo deploy</code></p>
+<h2 id="9完成"><a href="#9完成" class="headerlink" title="9完成"></a>9完成<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/21.png" alt="微信图片_20180924001007"></h2>
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
     <article id="post-搭建vps" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
@@ -521,75 +590,6 @@ https://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocks-libev_
 <h2 id="3、配置成功"><a href="#3、配置成功" class="headerlink" title="3、配置成功"></a>3、配置成功</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/36.png" alt="微信图片_20180924130103"></p>
 <h2 id="4、使用ss进行试验，输入ip，端口，密码"><a href="#4、使用ss进行试验，输入ip，端口，密码" class="headerlink" title="4、使用ss进行试验，输入ip，端口，密码"></a>4、使用ss进行试验，输入ip，端口，密码</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/37.png" alt="微信图片_20180924131934"></p>
 
-      
-    </div>
-    
-    <div class="article-info article-info-index">
-      
-      
-
-      
-      
-      <div class="clearfix"></div>
-    </div>
-    
-  </div>
-  
-</article>
-
-
-
-
-
-
-
-
-
-  
-    <article id="post-搭建个人博客" class="article article-type-post" itemscope="" itemprop="blogPost">
-  
-    <div class="article-meta">
-      <a href="/2018/09/25/搭建个人博客/" class="article-date">
-      <time datetime="2018-09-25T13:14:34.000Z" itemprop="datePublished">2018-09-25</time>
-</a>
-
-
-    </div>
-  
-  <div class="article-inner">
-    
-      <input type="hidden" class="isFancy">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/25/搭建个人博客/">搭建个人博客</a>
-    </h1>
-  
-
-      </header>
-      
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-          
-        <h1 id="搭建一个个人博客"><a href="#搭建一个个人博客" class="headerlink" title="搭建一个个人博客"></a>搭建一个个人博客</h1><h2 id="1-先在电脑上找到分配一个文件夹准备给blog"><a href="#1-先在电脑上找到分配一个文件夹准备给blog" class="headerlink" title="1 先在电脑上找到分配一个文件夹准备给blog"></a>1 先在电脑上找到分配一个文件夹准备给blog</h2><h2 id="2-注册github账号，但是可惜卡在了step1"><a href="#2-注册github账号，但是可惜卡在了step1" class="headerlink" title="2 注册github账号，但是可惜卡在了step1"></a>2 注册github账号，但是可惜卡在了step1</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/15.png" alt="1537621346512"></p>
-<h3 id="3用vpn登上"><a href="#3用vpn登上" class="headerlink" title="3用vpn登上"></a>3用vpn登上</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/16.png" alt="屏幕截图(3)"></p>
-<h2 id="4成功注册"><a href="#4成功注册" class="headerlink" title="4成功注册"></a>4成功注册<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/17.png" alt="微信图片_20180923083830"></h2><h2 id="5-新建一个工程"><a href="#5-新建一个工程" class="headerlink" title="5 新建一个工程"></a>5 新建一个工程</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/18.png" alt="微信图片_20180923213411"></p>
-<h2 id="6-下载并安装git"><a href="#6-下载并安装git" class="headerlink" title="6 下载并安装git"></a>6 下载并安装git</h2><p><a href="https://github.com/git-for-windows/git/releases/download/v2.19.0.windows.1/Git-2.19.0-64-bit.exe" target="_blank" rel="noopener">git下载地址</a></p>
-<h2 id="7-下载并安装nodejs"><a href="#7-下载并安装nodejs" class="headerlink" title="7 下载并安装nodejs"></a>7 下载并安装nodejs</h2><p><a href="https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi" target="_blank" rel="noopener">nodejs下载地址</a></p>
-<h2 id="8-安装hexo"><a href="#8-安装hexo" class="headerlink" title="8 安装hexo"></a>8 安装hexo</h2><h3 id="8-1先创建一个blog文件夹"><a href="#8-1先创建一个blog文件夹" class="headerlink" title="8.1先创建一个blog文件夹"></a>8.1先创建一个blog文件夹<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/19.png" alt="微信图片_20180923213937"></h3><h3 id="8-2使用cmd进行安装"><a href="#8-2使用cmd进行安装" class="headerlink" title="8.2使用cmd进行安装"></a>8.2使用cmd进行安装</h3><h3 id="8-3全局配置到淘宝源npm-config-set-registry-https-registry-npm-taobao-org（这个源比较稳定，也可以使用默认的）"><a href="#8-3全局配置到淘宝源npm-config-set-registry-https-registry-npm-taobao-org（这个源比较稳定，也可以使用默认的）" class="headerlink" title="8.3全局配置到淘宝源npm config set registry https://registry.npm.taobao.org（这个源比较稳定，也可以使用默认的）"></a>8.3全局配置到淘宝源<code>npm config set registry https://registry.npm.taobao.org</code>（这个源比较稳定，也可以使用默认的）</h3><h2 id="8-4设置全局配置user-name和user-email"><a href="#8-4设置全局配置user-name和user-email" class="headerlink" title="8.4设置全局配置user.name和user.email"></a>8.4设置全局配置user.name和user.email</h2><p><code>git config –-global user.name “id”</code><br> <code>git config –-global user.email “youremail@qq.com”</code></p>
-<h3 id="8-5生成SSH密钥设置到Github-需先设置user-name和user-email"><a href="#8-5生成SSH密钥设置到Github-需先设置user-name和user-email" class="headerlink" title="8.5生成SSH密钥设置到Github(需先设置user.name和user.email)"></a>8.5生成SSH密钥设置到Github(需先设置user.name和user.email)</h3><p><code>cd ~/.ssh</code><br><code>ssh-keygen -t rsa -C “youremail@qq.com”</code></p>
-<h3 id="8-6获取ssh密钥"><a href="#8-6获取ssh密钥" class="headerlink" title="8.6获取ssh密钥"></a>8.6获取ssh密钥</h3><p><code>cat id_rsa.pub</code></p>
-<h3 id="8-7输入github中"><a href="#8-7输入github中" class="headerlink" title="8.7输入github中"></a>8.7输入github中<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/20.png" alt="微信图片_20180923235427"></h3><h3 id="8-8检查一下是否成功"><a href="#8-8检查一下是否成功" class="headerlink" title="8.8检查一下是否成功"></a>8.8检查一下是否成功</h3><p><code>ssh -T git@github.com</code></p>
-<h3 id="8-9正式开始安装Hexo"><a href="#8-9正式开始安装Hexo" class="headerlink" title="8.9正式开始安装Hexo"></a>8.9正式开始安装Hexo</h3><p>  <code>cd /</code><br>  <code>pwd /</code><br><code>npm install hexo-cli -g</code>  </p>
-<p> <code>cd /</code><br><code>hexo init Hexo</code><br><code>cd /Hexo</code><br><code>npm install</code><br><code>hexo generate</code><br><code>hexo sever</code></p>
-<h3 id="8-10安装部署到github插件依赖"><a href="#8-10安装部署到github插件依赖" class="headerlink" title="8.10安装部署到github插件依赖"></a>8.10安装部署到github插件依赖</h3><p><code>npm install –save hexo-deployer-git</code></p>
-<h3 id="8-11更改-config-yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）"><a href="#8-11更改-config-yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）" class="headerlink" title="8.11更改_config.yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）"></a>8.11更改_config.yml文件的末尾（注意：冒号后面有一个空格，deploy下面每一行都有一个括号）</h3><p>deploy:<br>  type: git<br>  repo: <a href="mailto:git@github.com" target="_blank" rel="noopener">git@github.com</a>:id/id.github.io.git  //（改成自己的用户名和用户名加域名）<br>  branch: master</p>
-<h3 id="8-12将gitbash部署hexo到github"><a href="#8-12将gitbash部署hexo到github" class="headerlink" title="8.12将gitbash部署hexo到github"></a>8.12将gitbash部署hexo到github</h3><p><code>hexo deploy</code></p>
-<h2 id="9完成"><a href="#9完成" class="headerlink" title="9完成"></a>9完成<img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/21.png" alt="微信图片_20180924001007"></h2>
       
     </div>
     

@@ -1,20 +1,26 @@
-
-
 <!DOCTYPE html>
-<html lang="">
-<head prefix="og: http://ogp.me/ns#"><meta name="generator" content="Hexo 3.8.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <meta name="description" content="">
-    <title>wp_for_makerctf | d1lute的blog</title>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
 
-    <!-- Open Graph -->
-    <meta name="description" content="crypto1&amp;#x3001;easy_rsa1.1&amp;#x3001;&amp;#x5148;&amp;#x8BFB;&amp;#x4E00;&amp;#x4E0B;n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2&amp;#x3001;&amp;#x5199;&amp;#x4E2A;&amp;#x811A;&amp;#x672C;&amp;#x8F6C;&amp;#x6210;&amp;#x53">
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="author" content="John Doe">
+
+
+
+<meta name="description" content="crypto1、easy_rsa1.1、先读一下n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2、写个脚本转成十进制 n=184958528317971463827449839591526689799653355547671707738065461546785649065519 1.3、用yafu分解">
 <meta property="og:type" content="article">
 <meta property="og:title" content="wp_for_makerctf">
 <meta property="og:url" content="http://yoursite.com/2019/04/15/wp-for-makerctf/index.html">
 <meta property="og:site_name" content="d1lute的blog">
-<meta property="og:description" content="crypto1&amp;#x3001;easy_rsa1.1&amp;#x3001;&amp;#x5148;&amp;#x8BFB;&amp;#x4E00;&amp;#x4E0B;n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2&amp;#x3001;&amp;#x5199;&amp;#x4E2A;&amp;#x811A;&amp;#x672C;&amp;#x8F6C;&amp;#x6210;&amp;#x53">
+<meta property="og:description" content="crypto1、easy_rsa1.1、先读一下n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2、写个脚本转成十进制 n=184958528317971463827449839591526689799653355547671707738065461546785649065519 1.3、用yafu分解">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png">
 <meta property="og:image" content="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/2.png">
@@ -40,159 +46,305 @@
 <meta property="og:updated_time" content="2019-04-16T13:00:05.676Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="wp_for_makerctf">
-<meta name="twitter:description" content="crypto1&amp;#x3001;easy_rsa1.1&amp;#x3001;&amp;#x5148;&amp;#x8BFB;&amp;#x4E00;&amp;#x4E0B;n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2&amp;#x3001;&amp;#x5199;&amp;#x4E2A;&amp;#x811A;&amp;#x672C;&amp;#x8F6C;&amp;#x6210;&amp;#x53">
+<meta name="twitter:description" content="crypto1、easy_rsa1.1、先读一下n n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F 1.2、写个脚本转成十进制 n=184958528317971463827449839591526689799653355547671707738065461546785649065519 1.3、用yafu分解">
 <meta name="twitter:image" content="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png">
 
-    <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "email": "mailto:",
-  "image": "",
-  "name": "John Doe",
-  "url": "http://yoursite.com"
-}
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+
+    <link rel="alternate" href="/atom.xml" title="d1lute的blog" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>wp_for_makerctf | d1lute的blog</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: false,
+        isPost: true,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: 
+    }
 </script>
-    <script>
-    var algoliaEnabled = false;
-    
-</script>
 
-    
 
-    
-    
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    
-    
-    
-        <!-- stylesheets list from config.yml -->
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
+
+</head></html>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">John Doe</a></h1>
+        </hgroup>
+
         
-        <link rel="stylesheet" href="/css/aloha.css">
+
         
-        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
+
+
         
-        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
-        
-    
-
-</head>
-<body id="body" style="margin-bottom: 0;" class="pushable">
-
-    <div class="ui top fixed menu">
-        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
-    </div>
-
-    <div id="menu-sidebar" class="ui left vertical sidebar menu">
-
-    <div id="sidebar-top">
-        <div class="content">
-            <h3>d1lute的blog</h3>
-        </div>
-    </div>
-    <div class="ui container sidebar-card">
-    <div class="ui people shape content">
-        <div class="active side">
-            <div class="ui card">
-                <div class="image">
-                    <img class="ui medium bordered image" src="/images/avatar.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">John Doe</a>
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
                     
                 </div>
-                <div class="extra content">
-                    <div class="ui list">
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
                         
                         
-                    </div>
-
-                </div>
-                <div class="extra content">
-                    <div class="ui list">
+                        <li>关于我</li>
                         
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </div>
+        
 
-
-</div>
-
-    
-    
-
-    
-
-    
-    <a href="/index.html" class="item">
-        <i class="home icon"></i>
-        首页
-    </a>
-
-    
-
-    
-</div>
-
-    <div class="pusher body-content">
-        <div id="content" class="ui main container">
-            <!--<div class="ui one column grid">-->
-                <!--<div class="column">-->
-                    <!--<div class="ui main container">-->
-                        <div id="post-wp-for-makerctf" class="ui main container article-type-post">
-
-    
-
-    <div class="ui divided grid">
-
-        <div class="two column row" id="article-content">
-
-            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
                 
 
-<h1 class="ui header">
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
+      </div>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
+    </div>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
+</nav>
+      <div class="body-wrap"><article id="post-wp-for-makerctf" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/04/15/wp-for-makerctf/" class="article-date">
+      <time datetime="2019-04-15T15:09:28.000Z" itemprop="datePublished">2019-04-15</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
     
-    wp_for_makerctf
-</h1>
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      wp_for_makerctf
+    </h1>
+  
 
+      </header>
+      
+      <div class="article-info article-info-post">
+        
 
-
-                <div class="article-inner">
-
-                    <div class="article-entry" itemprop="articleBody">
-                        
-                        <h1 id="crypto"><a href="#crypto" class="headerlink" title="crypto"></a>crypto</h1><h2 id="1&#x3001;easy-rsa"><a href="#1&#x3001;easy-rsa" class="headerlink" title="1&#x3001;easy_rsa"></a>1&#x3001;easy_rsa</h2><h3 id="1-1&#x3001;&#x5148;&#x8BFB;&#x4E00;&#x4E0B;n"><a href="#1-1&#x3001;&#x5148;&#x8BFB;&#x4E00;&#x4E0B;n" class="headerlink" title="1.1&#x3001;&#x5148;&#x8BFB;&#x4E00;&#x4E0B;n"></a>1.1&#x3001;&#x5148;&#x8BFB;&#x4E00;&#x4E0B;n</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h1 id="crypto"><a href="#crypto" class="headerlink" title="crypto"></a>crypto</h1><h2 id="1、easy-rsa"><a href="#1、easy-rsa" class="headerlink" title="1、easy_rsa"></a>1、easy_rsa</h2><h3 id="1-1、先读一下n"><a href="#1-1、先读一下n" class="headerlink" title="1.1、先读一下n"></a>1.1、先读一下n</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/1.png" alt="微信图片_20181012144505"></p>
 <p>n=198EAD134975487966583BF363D7D36FFE4241DFBF0EAB37511DEDE00F279FE2F</p>
-<h3 id="1-2&#x3001;&#x5199;&#x4E2A;&#x811A;&#x672C;&#x8F6C;&#x6210;&#x5341;&#x8FDB;&#x5236;"><a href="#1-2&#x3001;&#x5199;&#x4E2A;&#x811A;&#x672C;&#x8F6C;&#x6210;&#x5341;&#x8FDB;&#x5236;" class="headerlink" title="1.2&#x3001;&#x5199;&#x4E2A;&#x811A;&#x672C;&#x8F6C;&#x6210;&#x5341;&#x8FDB;&#x5236;"></a>1.2&#x3001;&#x5199;&#x4E2A;&#x811A;&#x672C;&#x8F6C;&#x6210;&#x5341;&#x8FDB;&#x5236;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/2.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/2.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
+<h3 id="1-2、写个脚本转成十进制"><a href="#1-2、写个脚本转成十进制" class="headerlink" title="1.2、写个脚本转成十进制"></a>1.2、写个脚本转成十进制</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/2.png" alt="微信图片_20181012144505"></p>
 <p>n=184958528317971463827449839591526689799653355547671707738065461546785649065519</p>
-<h3 id="1-3&#x3001;&#x7528;yafu&#x5206;&#x89E3;&#x4E00;&#x4E0B;"><a href="#1-3&#x3001;&#x7528;yafu&#x5206;&#x89E3;&#x4E00;&#x4E0B;" class="headerlink" title="1.3&#x3001;&#x7528;yafu&#x5206;&#x89E3;&#x4E00;&#x4E0B;"></a>1.3&#x3001;&#x7528;yafu&#x5206;&#x89E3;&#x4E00;&#x4E0B;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/3.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/3.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/4.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/4.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<p>&#x4E0D;&#x59A8;&#x4F7F;&#x5F97;</p>
+<h3 id="1-3、用yafu分解一下"><a href="#1-3、用yafu分解一下" class="headerlink" title="1.3、用yafu分解一下"></a>1.3、用yafu分解一下</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/3.png" alt="微信图片_20181012144505"></p>
+<p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/4.png" alt="微信图片_20181012144505"></p>
+<p>不妨使得</p>
 <p>p=420226057252427765877741059207519510621</p>
 <p>q=440140550843727826962832356360132665339</p>
-<h3 id="1-4&#x3001;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x51FA;&#x79C1;&#x94A5;&#x7136;&#x540E;&#x5B58;&#x6210;pem&#x6587;&#x4EF6;"><a href="#1-4&#x3001;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x51FA;&#x79C1;&#x94A5;&#x7136;&#x540E;&#x5B58;&#x6210;pem&#x6587;&#x4EF6;" class="headerlink" title="1.4&#x3001;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x51FA;&#x79C1;&#x94A5;&#x7136;&#x540E;&#x5B58;&#x6210;pem&#x6587;&#x4EF6;"></a>1.4&#x3001;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x51FA;&#x79C1;&#x94A5;&#x7136;&#x540E;&#x5B58;&#x6210;pem&#x6587;&#x4EF6;</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> Crypto.PublicKey <span class="keyword">import</span> RSA</span><br><span class="line"></span><br><span class="line">keypair = RSA.generate(<span class="number">1024</span>)</span><br><span class="line"></span><br><span class="line">keypair.p =<span class="number">440140550843727826962832356360132665339</span></span><br><span class="line"></span><br><span class="line">keypair.q =<span class="number">420226057252427765877741059207519510621</span></span><br><span class="line"></span><br><span class="line">keypair.e = <span class="number">65537</span></span><br><span class="line"></span><br><span class="line">keypair.n = keypair.p * keypair.q</span><br><span class="line"></span><br><span class="line">Qn = long((keypair.p<span class="number">-1</span>) * (keypair.q<span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (<span class="keyword">True</span>):</span><br><span class="line">x = (Qn * i ) + <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> (x % keypair.e == <span class="number">0</span>):</span><br><span class="line">keypair.d = x / keypair.e</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">private = open(<span class="string">&apos;private.pem&apos;</span>,<span class="string">&apos;w&apos;</span>)</span><br><span class="line"></span><br><span class="line">private.write(keypair.exportKey())</span><br><span class="line"></span><br><span class="line">private.close()</span><br></pre></td></tr></table></figure>
-<h3 id="1-5&#x3001;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x79C1;&#x94A5;&#x548C;flag&#x4EE5;&#x53CA;&#x516C;&#x94A5;&#x653E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7528;openssl&#x89E3;&#x5BC6;"><a href="#1-5&#x3001;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x79C1;&#x94A5;&#x548C;flag&#x4EE5;&#x53CA;&#x516C;&#x94A5;&#x653E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7528;openssl&#x89E3;&#x5BC6;" class="headerlink" title="1.5&#x3001;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x79C1;&#x94A5;&#x548C;flag&#x4EE5;&#x53CA;&#x516C;&#x94A5;&#x653E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7528;openssl&#x89E3;&#x5BC6;"></a>1.5&#x3001;&#x5C06;&#x5F97;&#x5230;&#x7684;&#x79C1;&#x94A5;&#x548C;flag&#x4EE5;&#x53CA;&#x516C;&#x94A5;&#x653E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x7528;openssl&#x89E3;&#x5BC6;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/5.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/5.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h2 id="2&#x3001;B-amp-C"><a href="#2&#x3001;B-amp-C" class="headerlink" title="2&#x3001;B&amp;C"></a>2&#x3001;B&amp;C</h2><h3 id="2-1&#x3001;&#x770B;&#x5230;&#x5BC6;&#x7801;&#xFF0C;&#x7531;&#x9898;&#x76EE;&#x60F3;&#x5230;base&#x5BB6;&#x65CF;&#x4EE5;&#x53CA;&#x53D8;&#x5F02;&#x51EF;&#x6492;"><a href="#2-1&#x3001;&#x770B;&#x5230;&#x5BC6;&#x7801;&#xFF0C;&#x7531;&#x9898;&#x76EE;&#x60F3;&#x5230;base&#x5BB6;&#x65CF;&#x4EE5;&#x53CA;&#x53D8;&#x5F02;&#x51EF;&#x6492;" class="headerlink" title="2.1&#x3001;&#x770B;&#x5230;&#x5BC6;&#x7801;&#xFF0C;&#x7531;&#x9898;&#x76EE;&#x60F3;&#x5230;base&#x5BB6;&#x65CF;&#x4EE5;&#x53CA;&#x53D8;&#x5F02;&#x51EF;&#x6492;"></a>2.1&#x3001;&#x770B;&#x5230;&#x5BC6;&#x7801;&#xFF0C;&#x7531;&#x9898;&#x76EE;&#x60F3;&#x5230;base&#x5BB6;&#x65CF;&#x4EE5;&#x53CA;&#x53D8;&#x5F02;&#x51EF;&#x6492;</h3><p>LJDU433EGJNDIWTKNQ4GCWCCORIW2YZ5</p>
-<h3 id="2-2&#x3001;&#x4E00;&#x5F00;&#x59CB;&#x53EA;&#x6709;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x4EE5;&#x53CA;&#x6570;&#x5B57;&#xFF0C;&#x63A8;&#x6D4B;&#x662F;base32&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"><a href="#2-2&#x3001;&#x4E00;&#x5F00;&#x59CB;&#x53EA;&#x6709;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x4EE5;&#x53CA;&#x6570;&#x5B57;&#xFF0C;&#x63A8;&#x6D4B;&#x662F;base32&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;" class="headerlink" title="2.2&#x3001;&#x4E00;&#x5F00;&#x59CB;&#x53EA;&#x6709;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x4EE5;&#x53CA;&#x6570;&#x5B57;&#xFF0C;&#x63A8;&#x6D4B;&#x662F;base32&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"></a>2.2&#x3001;&#x4E00;&#x5F00;&#x59CB;&#x53EA;&#x6709;&#x5927;&#x5199;&#x5B57;&#x6BCD;&#x4EE5;&#x53CA;&#x6570;&#x5B57;&#xFF0C;&#x63A8;&#x6D4B;&#x662F;base32&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;</h3><p>ZGNod2Z4Zjl8aXBtQmc=</p>
-<h3 id="2-3&#x3001;&#x770B;&#x5230;&#x540C;&#x65F6;&#x6709;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x4EE5;&#x53CA;&#x7B49;&#x53F7;&#xFF0C;&#x63A8;&#x6D4B;&#x8FD8;&#x6709;base64&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"><a href="#2-3&#x3001;&#x770B;&#x5230;&#x540C;&#x65F6;&#x6709;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x4EE5;&#x53CA;&#x7B49;&#x53F7;&#xFF0C;&#x63A8;&#x6D4B;&#x8FD8;&#x6709;base64&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;" class="headerlink" title="2.3&#x3001;&#x770B;&#x5230;&#x540C;&#x65F6;&#x6709;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x4EE5;&#x53CA;&#x7B49;&#x53F7;&#xFF0C;&#x63A8;&#x6D4B;&#x8FD8;&#x6709;base64&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"></a>2.3&#x3001;&#x770B;&#x5230;&#x540C;&#x65F6;&#x6709;&#x5927;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#x548C;&#x6570;&#x5B57;&#x4EE5;&#x53CA;&#x7B49;&#x53F7;&#xFF0C;&#x63A8;&#x6D4B;&#x8FD8;&#x6709;base64&#x52A0;&#x5BC6;&#xFF0C;&#x7528;&#x811A;&#x672C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;</h3><p>dchwfxf9|ipmBg</p>
-<h3 id="2-4&#x3001;&#x7531;&#x4E8E;&#x9898;&#x76EE;&#x4E2D;&#x63D0;&#x793A;&#x6709;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x548C;base&#xFF0C;&#x63A8;&#x6D4B;&#x4E0E;ascii&#x7801;&#x7684;&#x4F4D;&#x79FB;&#x6709;&#x5173;"><a href="#2-4&#x3001;&#x7531;&#x4E8E;&#x9898;&#x76EE;&#x4E2D;&#x63D0;&#x793A;&#x6709;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x548C;base&#xFF0C;&#x63A8;&#x6D4B;&#x4E0E;ascii&#x7801;&#x7684;&#x4F4D;&#x79FB;&#x6709;&#x5173;" class="headerlink" title="2.4&#x3001;&#x7531;&#x4E8E;&#x9898;&#x76EE;&#x4E2D;&#x63D0;&#x793A;&#x6709;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x548C;base&#xFF0C;&#x63A8;&#x6D4B;&#x4E0E;ascii&#x7801;&#x7684;&#x4F4D;&#x79FB;&#x6709;&#x5173;"></a>2.4&#x3001;&#x7531;&#x4E8E;&#x9898;&#x76EE;&#x4E2D;&#x63D0;&#x793A;&#x6709;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x548C;base&#xFF0C;&#x63A8;&#x6D4B;&#x4E0E;ascii&#x7801;&#x7684;&#x4F4D;&#x79FB;&#x6709;&#x5173;</h3><p>&#x731C;&#x6D4B;&#x662F;base&#x5F00;&#x5934;&#x7684;flag</p>
+<h3 id="1-4、写一个脚本解出私钥然后存成pem文件"><a href="#1-4、写一个脚本解出私钥然后存成pem文件" class="headerlink" title="1.4、写一个脚本解出私钥然后存成pem文件"></a>1.4、写一个脚本解出私钥然后存成pem文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># coding=utf-8</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> math</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> sys</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> Crypto.PublicKey <span class="keyword">import</span> RSA</span><br><span class="line"></span><br><span class="line">keypair = RSA.generate(<span class="number">1024</span>)</span><br><span class="line"></span><br><span class="line">keypair.p =<span class="number">440140550843727826962832356360132665339</span></span><br><span class="line"></span><br><span class="line">keypair.q =<span class="number">420226057252427765877741059207519510621</span></span><br><span class="line"></span><br><span class="line">keypair.e = <span class="number">65537</span></span><br><span class="line"></span><br><span class="line">keypair.n = keypair.p * keypair.q</span><br><span class="line"></span><br><span class="line">Qn = long((keypair.p<span class="number">-1</span>) * (keypair.q<span class="number">-1</span>))</span><br><span class="line"></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> (<span class="keyword">True</span>):</span><br><span class="line">x = (Qn * i ) + <span class="number">1</span></span><br><span class="line"><span class="keyword">if</span> (x % keypair.e == <span class="number">0</span>):</span><br><span class="line">keypair.d = x / keypair.e</span><br><span class="line"><span class="keyword">break</span></span><br><span class="line"></span><br><span class="line">i += <span class="number">1</span></span><br><span class="line"></span><br><span class="line">private = open(<span class="string">'private.pem'</span>,<span class="string">'w'</span>)</span><br><span class="line"></span><br><span class="line">private.write(keypair.exportKey())</span><br><span class="line"></span><br><span class="line">private.close()</span><br></pre></td></tr></table></figure>
+<h3 id="1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密"><a href="#1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密" class="headerlink" title="1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密"></a>1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/5.png" alt="微信图片_20181012144505"></p>
+<h2 id="2、B-amp-C"><a href="#2、B-amp-C" class="headerlink" title="2、B&amp;C"></a>2、B&amp;C</h2><h3 id="2-1、看到密码，由题目想到base家族以及变异凯撒"><a href="#2-1、看到密码，由题目想到base家族以及变异凯撒" class="headerlink" title="2.1、看到密码，由题目想到base家族以及变异凯撒"></a>2.1、看到密码，由题目想到base家族以及变异凯撒</h3><p>LJDU433EGJNDIWTKNQ4GCWCCORIW2YZ5</p>
+<h3 id="2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"><a href="#2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到" class="headerlink" title="2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"></a>2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到</h3><p>ZGNod2Z4Zjl8aXBtQmc=</p>
+<h3 id="2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"><a href="#2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到" class="headerlink" title="2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"></a>2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到</h3><p>dchwfxf9|ipmBg</p>
+<h3 id="2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"><a href="#2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关" class="headerlink" title="2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"></a>2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关</h3><p>猜测是base开头的flag</p>
 <p>d-b=2</p>
 <p>c-a=-2</p>
 <p>h-s=-10</p>
 <p>w-e=14</p>
-<p>&#x5E76;&#x6CA1;&#x6709;&#x627E;&#x5230;&#x89C4;&#x5F8B;,</p>
-<p>&#x731C;&#x6D4B;&#x662F;Caesar&#x5F00;&#x5934;</p>
+<p>并没有找到规律,</p>
+<p>猜测是Caesar开头</p>
 <p>d-c=1</p>
 <p>c-a=2</p>
 <p>h-e=3</p>
 <p>w-s=4</p>
-<h3 id="2-5&#x3001;&#x7531;&#x6B64;&#x63A8;&#x6D4B;&#x51FA;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x539F;&#x7406;&#x662F;&#x5728;ascii&#x7801;&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x5417;&#x6BCF;&#x4F4D;&#x4F4D;&#x79FB;&#x6570;&#x52A0;&#x4E00;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x5BC6;"><a href="#2-5&#x3001;&#x7531;&#x6B64;&#x63A8;&#x6D4B;&#x51FA;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x539F;&#x7406;&#x662F;&#x5728;ascii&#x7801;&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x5417;&#x6BCF;&#x4F4D;&#x4F4D;&#x79FB;&#x6570;&#x52A0;&#x4E00;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x5BC6;" class="headerlink" title="2.5&#x3001;&#x7531;&#x6B64;&#x63A8;&#x6D4B;&#x51FA;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x539F;&#x7406;&#x662F;&#x5728;ascii&#x7801;&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x5417;&#x6BCF;&#x4F4D;&#x4F4D;&#x79FB;&#x6570;&#x52A0;&#x4E00;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x5BC6;"></a>2.5&#x3001;&#x7531;&#x6B64;&#x63A8;&#x6D4B;&#x51FA;&#x53D8;&#x5F02;&#x51EF;&#x6492;&#x539F;&#x7406;&#x662F;&#x5728;ascii&#x7801;&#x4E0A;&#x8FDB;&#x884C;&#x7684;&#x5417;&#x6BCF;&#x4F4D;&#x4F4D;&#x79FB;&#x6570;&#x52A0;&#x4E00;&#x7684;&#x52A0;&#x5BC6;&#xFF0C;&#x5199;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x89E3;&#x5BC6;</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>{</span><br><span class="line">	<span class="keyword">char</span> a[<span class="number">100</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">&quot;%s&quot;</span>, a);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; a[i] != <span class="number">0</span>; i++) {</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">&quot;%c&quot;</span>, a[i] - i - <span class="number">1</span>);</span><br><span class="line">	}</span><br><span class="line">	system(<span class="string">&quot;pause&quot;</span>);</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
-<h3 id="2-6&#x3001;&#x8FD0;&#x884C;&#x811A;&#x672C;-&#x5F97;&#x5230;flag&#x3002;"><a href="#2-6&#x3001;&#x8FD0;&#x884C;&#x811A;&#x672C;-&#x5F97;&#x5230;flag&#x3002;" class="headerlink" title="2.6&#x3001;&#x8FD0;&#x884C;&#x811A;&#x672C;,&#x5F97;&#x5230;flag&#x3002;"></a>2.6&#x3001;&#x8FD0;&#x884C;&#x811A;&#x672C;,&#x5F97;&#x5230;flag&#x3002;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/6.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/6.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h2 id="3&#x3001;base-amp-fez"><a href="#3&#x3001;base-amp-fez" class="headerlink" title="3&#x3001;base&amp;fez"></a>3&#x3001;base&amp;fez</h2><h3 id="3-1&#x6253;&#x5F00;&#x9898;&#x76EE;&#x770B;&#x5230;&#x6E90;&#x7801;"><a href="#3-1&#x6253;&#x5F00;&#x9898;&#x76EE;&#x770B;&#x5230;&#x6E90;&#x7801;" class="headerlink" title="3.1&#x6253;&#x5F00;&#x9898;&#x76EE;&#x770B;&#x5230;&#x6E90;&#x7801;"></a>3.1&#x6253;&#x5F00;&#x9898;&#x76EE;&#x770B;&#x5230;&#x6E90;&#x7801;</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x,k)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> xor(xor(x,k),<span class="number">7</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">round</span><span class="params">(M,K)</span>:</span></span><br><span class="line">    L=M[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">    R=M[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">    new_l=R</span><br><span class="line">    new_r=xor(xor(R,L),K)</span><br><span class="line">    <span class="keyword">return</span> new_l+new_r</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">festal</span><span class="params">(m,K)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> K:</span><br><span class="line">        m=round(m,i) </span><br><span class="line">    <span class="keyword">return</span> m</span><br><span class="line"></span><br><span class="line">K=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">7</span>):</span><br><span class="line">    K.append(os.urandom(<span class="number">27</span>))</span><br><span class="line">m=open(<span class="string">&quot;base_and_fez&quot;</span>,<span class="string">&quot;rb&quot;</span>).read()</span><br><span class="line"><span class="keyword">print</span> (len(m))</span><br><span class="line"><span class="keyword">assert</span> len(m)&lt;=<span class="number">54</span></span><br><span class="line">m+=os.urandom(<span class="number">54</span>-len(m)) </span><br><span class="line"></span><br><span class="line">test=os.urandom(<span class="number">54</span>)</span><br><span class="line"><span class="keyword">print</span> (test.encode(<span class="string">&quot;hex&quot;</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(test,K).encode(<span class="string">&quot;hex&quot;</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(m,K).encode(<span class="string">&quot;hex&quot;</span>))</span><br></pre></td></tr></table></figure>
-<h3 id="3-2&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9898;&#x76EE;&#x672C;&#x8EAB;&#x662F;&#x4EE5;&#x5F02;&#x6216;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x79CD;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F02;&#x6216;&#x540C;&#x4E00;&#x4E2A;k&#x4E24;&#x6B21;&#x8FD8;&#x539F;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x9898;"><a href="#3-2&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9898;&#x76EE;&#x672C;&#x8EAB;&#x662F;&#x4EE5;&#x5F02;&#x6216;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x79CD;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F02;&#x6216;&#x540C;&#x4E00;&#x4E2A;k&#x4E24;&#x6B21;&#x8FD8;&#x539F;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x9898;" class="headerlink" title="3.2&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9898;&#x76EE;&#x672C;&#x8EAB;&#x662F;&#x4EE5;&#x5F02;&#x6216;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x79CD;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F02;&#x6216;&#x540C;&#x4E00;&#x4E2A;k&#x4E24;&#x6B21;&#x8FD8;&#x539F;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x9898;"></a>3.2&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x9898;&#x76EE;&#x672C;&#x8EAB;&#x662F;&#x4EE5;&#x5F02;&#x6216;&#x4E3A;&#x6838;&#x5FC3;&#x7684;&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#x8FD9;&#x79CD;&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5F02;&#x6216;&#x540C;&#x4E00;&#x4E2A;k&#x4E24;&#x6B21;&#x8FD8;&#x539F;&#x6765;&#x8FDB;&#x884C;&#x89E3;&#x9898;</h3><p>  &#x89C2;&#x5BDF;&#x51FD;&#x6570;&#xFF0C;&#x9996;&#x5148;&#x8FDB;&#x884C;&#x4E86;&#x4E03;&#x6B21;round&#xFF0C;&#x4E0D;&#x59A8;&#x8BBE;&#x88AB;&#x52A0;&#x5BC6;&#x660E;&#x6587;&#x524D;&#x534A;&#x90E8;&#x5206;&#x4E3A;m1&#xFF0C;&#x540E;&#x534A;&#x90E8;&#x5206;&#x4E3A;m2</p>
-<p>&#x5355;&#x770B;m1&#x548C;m2&#x7684;&#x53D8;&#x6362;&#xFF0C;&#x6709;&#x5982;&#x4E0B;&#x7ED3;&#x679C;(&#x5C06;m1xorm2&#x8868;&#x793A;&#x4E3A;m1m2,&#x4E14;&#x5C06;x xor x&#x76F4;&#x63A5;&#x6D88;&#x53BB;)</p>
+<h3 id="2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"><a href="#2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密" class="headerlink" title="2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"></a>2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdio.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">	<span class="keyword">char</span> a[<span class="number">100</span>];</span><br><span class="line">	<span class="built_in">scanf</span>(<span class="string">"%s"</span>, a);</span><br><span class="line">	<span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; a[i] != <span class="number">0</span>; i++) &#123;</span><br><span class="line">		<span class="built_in">printf</span>(<span class="string">"%c"</span>, a[i] - i - <span class="number">1</span>);</span><br><span class="line">	&#125;</span><br><span class="line">	system(<span class="string">"pause"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-6、运行脚本-得到flag。"><a href="#2-6、运行脚本-得到flag。" class="headerlink" title="2.6、运行脚本,得到flag。"></a>2.6、运行脚本,得到flag。</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/6.png" alt="微信图片_20181012144505"></p>
+<h2 id="3、base-amp-fez"><a href="#3、base-amp-fez" class="headerlink" title="3、base&amp;fez"></a>3、base&amp;fez</h2><h3 id="3-1打开题目看到源码"><a href="#3-1打开题目看到源码" class="headerlink" title="3.1打开题目看到源码"></a>3.1打开题目看到源码</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> os</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">    </span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">f</span><span class="params">(x,k)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> xor(xor(x,k),<span class="number">7</span>)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">round</span><span class="params">(M,K)</span>:</span></span><br><span class="line">    L=M[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">    R=M[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">    new_l=R</span><br><span class="line">    new_r=xor(xor(R,L),K)</span><br><span class="line">    <span class="keyword">return</span> new_l+new_r</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">festal</span><span class="params">(m,K)</span>:</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> K:</span><br><span class="line">        m=round(m,i) </span><br><span class="line">    <span class="keyword">return</span> m</span><br><span class="line"></span><br><span class="line">K=[]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">7</span>):</span><br><span class="line">    K.append(os.urandom(<span class="number">27</span>))</span><br><span class="line">m=open(<span class="string">"base_and_fez"</span>,<span class="string">"rb"</span>).read()</span><br><span class="line"><span class="keyword">print</span> (len(m))</span><br><span class="line"><span class="keyword">assert</span> len(m)&lt;=<span class="number">54</span></span><br><span class="line">m+=os.urandom(<span class="number">54</span>-len(m)) </span><br><span class="line"></span><br><span class="line">test=os.urandom(<span class="number">54</span>)</span><br><span class="line"><span class="keyword">print</span> (test.encode(<span class="string">"hex"</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(test,K).encode(<span class="string">"hex"</span>))</span><br><span class="line"><span class="keyword">print</span> (festal(m,K).encode(<span class="string">"hex"</span>))</span><br></pre></td></tr></table></figure>
+<h3 id="3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"><a href="#3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题" class="headerlink" title="3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"></a>3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题</h3><p>  观察函数，首先进行了七次round，不妨设被加密明文前半部分为m1，后半部分为m2</p>
+<p>单看m1和m2的变换，有如下结果(将m1xorm2表示为m1m2,且将x xor x直接消去)</p>
 <p>m1         m2</p>
 <p>m2         m1m2</p>
 <p>m1m2   m1</p>
@@ -201,137 +353,244 @@
 <p>m1m2   m1</p>
 <p>m1         m2</p>
 <p>m2         m1m2</p>
-<p>&#x56E0;&#x6B64;&#x7ECF;&#x8FC7;&#x52A0;&#x5BC6;&#x540E;&#xFF0C;&#x539F;&#x6587;&#x4E3A;m1+m2&#x7684;&#x660E;&#x6587;&#xFF0C;&#x88AB;&#x52A0;&#x5BC6;&#x4E3A;&#x4E86;m2Kj+m1m2Ki&#xFF08;&#x5176;&#x4E2D;Kj&#x548C;Ki&#x4E3A;K&#x7684;&#x4E03;&#x4E2A;&#x90E8;&#x5206;&#x8FDB;&#x884C;&#x7684;&#x67D0;&#x79CD;&#x4E58;&#x79EF;&#x7EC4;&#x5408;&#xFF0C;&#x7531;&#x4E8E;&#x53EF;&#x4EE5;&#x6D88;&#x6389;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x53BB;&#x63A8;&#x5BFC;&#xFF09;</p>
-<p>&#x56E0;&#x6B64;&#x5C06;TEXT&#x770B;&#x4F5C;m1+m2</p>
-<p>&#x5C06;&#x660E;&#x6587;&#x770B;&#x4F5C;M1+M2</p>
-<p>resault&#x4E2D;&#x7684;&#x4E09;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x5206;&#x522B;&#x4E3A;</p>
+<p>因此经过加密后，原文为m1+m2的明文，被加密为了m2Kj+m1m2Ki（其中Kj和Ki为K的七个部分进行的某种乘积组合，由于可以消掉，所以不去推导）</p>
+<p>因此将TEXT看作m1+m2</p>
+<p>将明文看作M1+M2</p>
+<p>resault中的三个字符串分别为</p>
 <p>m1+m2</p>
 <p>m2Kj+m1m2Ki</p>
 <p>M2Kj+M1M2Ki</p>
-<p>&#x89E3;&#x5BC6;&#x601D;&#x8DEF;&#x4E3A;</p>
+<p>解密思路为</p>
 <p>M2=M2Kj  xor   m2Kj   xor   m2</p>
 <p>M1=(M1M2Ki xor M2Kj) xor(m1m2Ki xor m2Kj) xor m1</p>
-<h3 id="3-3&#x5206;&#x6790;&#x5B8C;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;"><a href="#3-3&#x5206;&#x6790;&#x5B8C;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;" class="headerlink" title="3.3&#x5206;&#x6790;&#x5B8C;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;"></a>3.3&#x5206;&#x6790;&#x5B8C;&#x601D;&#x8DEF;&#xFF0C;&#x901A;&#x8FC7;&#x811A;&#x672C;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">&quot;&quot;</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">b=<span class="string">&quot;deec78f07a169673679822c2b06c3b96f9fb225dc5404b532dd8b04a992774e8ec76ac7f6322f3492534033dd5953f06d601c14d3ad3&quot;</span></span><br><span class="line">c=<span class="string">&quot;aa5467efd0b871e3e5fc89f146f766b82b5145c005a4872fd1ef11bf0505027fc7f0eb0db49501832831c7b204492dcdf4a6f0e6d110&quot;</span></span><br><span class="line">m=<span class="string">&quot;c50a135a56c000a4c394549407bb2cab1349ebdc4ee31e0601e33b47d3752381fc82b3bd37fa65d9a9740890fe25f6e8ba9135d3499f&quot;</span></span><br><span class="line">c=c.decode(<span class="string">&quot;hex&quot;</span>)</span><br><span class="line">b=b.decode(<span class="string">&quot;hex&quot;</span>)</span><br><span class="line">m=m.decode(<span class="string">&quot;hex&quot;</span>)</span><br><span class="line"></span><br><span class="line">c1=c[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">c2=c[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">b1=b[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">b2=b[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">m1=m[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">m2=m[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">x=xor(xor(xor(b1,b2),xor(c1,c2)),m1)+xor(xor(b1,c1),m2)</span><br><span class="line"><span class="keyword">print</span> (x)</span><br><span class="line"></span><br><span class="line">o=open(<span class="string">&quot;base_and_fez&quot;</span>,<span class="string">&quot;wb&quot;</span>)</span><br><span class="line">o.write(x)</span><br></pre></td></tr></table></figure>
-<h3 id="3-4&#x89E3;&#x7801;&#x540E;&#x5F97;&#x5230;"><a href="#3-4&#x89E3;&#x7801;&#x540E;&#x5F97;&#x5230;" class="headerlink" title="3.4&#x89E3;&#x7801;&#x540E;&#x5F97;&#x5230;"></a>3.4&#x89E3;&#x7801;&#x540E;&#x5F97;&#x5230;</h3><p>D..3kEas3&#x2019;HU;-tAN2PSE%uKV?Y3kj&lt;+Re#?SQV/2)&amp;BTBk(^]I/~&gt;</p>
-<h3 id="3-5&#x4E0D;&#x65AD;&#x5C1D;&#x8BD5;&#x5404;&#x79CD;base&#x89E3;&#x5BC6;&#xFF0C;&#x4EE5;&#x53CA;&#x7ECF;&#x5386;&#x4E86;&#x5927;&#x91CF;&#x81EA;&#x6211;&#x6000;&#x7591;&#x540E;&#xFF0C;&#x7528;base85&#x89E3;&#x5BC6;&#x5F97;&#x5230;flag"><a href="#3-5&#x4E0D;&#x65AD;&#x5C1D;&#x8BD5;&#x5404;&#x79CD;base&#x89E3;&#x5BC6;&#xFF0C;&#x4EE5;&#x53CA;&#x7ECF;&#x5386;&#x4E86;&#x5927;&#x91CF;&#x81EA;&#x6211;&#x6000;&#x7591;&#x540E;&#xFF0C;&#x7528;base85&#x89E3;&#x5BC6;&#x5F97;&#x5230;flag" class="headerlink" title="3.5&#x4E0D;&#x65AD;&#x5C1D;&#x8BD5;&#x5404;&#x79CD;base&#x89E3;&#x5BC6;&#xFF0C;&#x4EE5;&#x53CA;&#x7ECF;&#x5386;&#x4E86;&#x5927;&#x91CF;&#x81EA;&#x6211;&#x6000;&#x7591;&#x540E;&#xFF0C;&#x7528;base85&#x89E3;&#x5BC6;&#x5F97;&#x5230;flag"></a>3.5&#x4E0D;&#x65AD;&#x5C1D;&#x8BD5;&#x5404;&#x79CD;base&#x89E3;&#x5BC6;&#xFF0C;&#x4EE5;&#x53CA;&#x7ECF;&#x5386;&#x4E86;&#x5927;&#x91CF;&#x81EA;&#x6211;&#x6000;&#x7591;&#x540E;&#xFF0C;&#x7528;base85&#x89E3;&#x5BC6;&#x5F97;&#x5230;flag</h3><p>makerctf{Ba4e85_p1us_fesTe1l_1s_50_nice_}</p>
-<h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><h2 id="1&#x3001;&#x7A76;&#x6781;&#x8111;&#x6D1E;&#x9898;"><a href="#1&#x3001;&#x7A76;&#x6781;&#x8111;&#x6D1E;&#x9898;" class="headerlink" title="1&#x3001;&#x7A76;&#x6781;&#x8111;&#x6D1E;&#x9898;"></a>1&#x3001;&#x7A76;&#x6781;&#x8111;&#x6D1E;&#x9898;</h2><h3 id="1-1&#x3001;&#x770B;&#x5B8C;&#x9898;&#x76EE;&#xFF0C;&#x7531;&#x8111;&#x6D1E;&#x9898;&#xFF0C;&#x8111;&#x6D1E;&#x731C;&#x6D4B;hint&#x6307;&#x5411;qq&#x53F7;"><a href="#1-1&#x3001;&#x770B;&#x5B8C;&#x9898;&#x76EE;&#xFF0C;&#x7531;&#x8111;&#x6D1E;&#x9898;&#xFF0C;&#x8111;&#x6D1E;&#x731C;&#x6D4B;hint&#x6307;&#x5411;qq&#x53F7;" class="headerlink" title="1.1&#x3001;&#x770B;&#x5B8C;&#x9898;&#x76EE;&#xFF0C;&#x7531;&#x8111;&#x6D1E;&#x9898;&#xFF0C;&#x8111;&#x6D1E;&#x731C;&#x6D4B;hint&#x6307;&#x5411;qq&#x53F7;"></a>1.1&#x3001;&#x770B;&#x5B8C;&#x9898;&#x76EE;&#xFF0C;&#x7531;&#x8111;&#x6D1E;&#x9898;&#xFF0C;&#x8111;&#x6D1E;&#x731C;&#x6D4B;hint&#x6307;&#x5411;qq&#x53F7;</h3><p>316f526f614766766855384d4b73396a3865316f716d41<br>hint&#xFF1A;2698852664</p>
-<h3 id="1-2&#x3001;&#x5728;qq&#x4E2D;&#x641C;qq&#x53F7;&#xFF0C;&#x770B;&#x5230;"><a href="#1-2&#x3001;&#x5728;qq&#x4E2D;&#x641C;qq&#x53F7;&#xFF0C;&#x770B;&#x5230;" class="headerlink" title="1.2&#x3001;&#x5728;qq&#x4E2D;&#x641C;qq&#x53F7;&#xFF0C;&#x770B;&#x5230;"></a>1.2&#x3001;&#x5728;qq&#x4E2D;&#x641C;qq&#x53F7;&#xFF0C;&#x770B;&#x5230;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/7.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/7.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-3&#x3001;&#x770B;&#x5230;a7gh&#x8111;&#x6D1E;&#x731C;&#x6D4B;&#x662F;&#x767E;&#x5EA6;&#x4E91;&#x5BC6;&#x7801;&#xFF0C;&#x56E0;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x767E;&#x5EA6;&#x4E91;&#x540E;&#x7F00;&#xFF0C;&#x7531;&#x4E8E;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7801;&#xFF0C;&#x56E0;&#x6B64;base16&#x89E3;&#x5BC6;&#x4E00;&#x4E0B;&#x5F97;&#x5230;"><a href="#1-3&#x3001;&#x770B;&#x5230;a7gh&#x8111;&#x6D1E;&#x731C;&#x6D4B;&#x662F;&#x767E;&#x5EA6;&#x4E91;&#x5BC6;&#x7801;&#xFF0C;&#x56E0;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x767E;&#x5EA6;&#x4E91;&#x540E;&#x7F00;&#xFF0C;&#x7531;&#x4E8E;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7801;&#xFF0C;&#x56E0;&#x6B64;base16&#x89E3;&#x5BC6;&#x4E00;&#x4E0B;&#x5F97;&#x5230;" class="headerlink" title="1.3&#x3001;&#x770B;&#x5230;a7gh&#x8111;&#x6D1E;&#x731C;&#x6D4B;&#x662F;&#x767E;&#x5EA6;&#x4E91;&#x5BC6;&#x7801;&#xFF0C;&#x56E0;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x767E;&#x5EA6;&#x4E91;&#x540E;&#x7F00;&#xFF0C;&#x7531;&#x4E8E;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7801;&#xFF0C;&#x56E0;&#x6B64;base16&#x89E3;&#x5BC6;&#x4E00;&#x4E0B;&#x5F97;&#x5230;"></a>1.3&#x3001;&#x770B;&#x5230;a7gh&#x8111;&#x6D1E;&#x731C;&#x6D4B;&#x662F;&#x767E;&#x5EA6;&#x4E91;&#x5BC6;&#x7801;&#xFF0C;&#x56E0;&#x6B64;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x80FD;&#x6307;&#x5411;&#x767E;&#x5EA6;&#x4E91;&#x540E;&#x7F00;&#xFF0C;&#x7531;&#x4E8E;&#x8BE5;&#x5B57;&#x7B26;&#x4E32;&#x770B;&#x8D77;&#x6765;&#x5F88;&#x50CF;&#x5341;&#x516D;&#x8FDB;&#x5236;&#x7801;&#xFF0C;&#x56E0;&#x6B64;base16&#x89E3;&#x5BC6;&#x4E00;&#x4E0B;&#x5F97;&#x5230;</h3><p>1oRoaGfvhU8MKs9j8e1oqmA</p>
-<h3 id="1-4&#x5C06;&#x5176;&#x52A0;&#x4E0A;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x540E;&#x7F00;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x767E;&#x5EA6;&#x4E91;&#x94FE;&#x63A5;"><a href="#1-4&#x5C06;&#x5176;&#x52A0;&#x4E0A;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x540E;&#x7F00;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x767E;&#x5EA6;&#x4E91;&#x94FE;&#x63A5;" class="headerlink" title="1.4&#x5C06;&#x5176;&#x52A0;&#x4E0A;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x540E;&#x7F00;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x767E;&#x5EA6;&#x4E91;&#x94FE;&#x63A5;"></a>1.4&#x5C06;&#x5176;&#x52A0;&#x4E0A;&#x767E;&#x5EA6;&#x7F51;&#x76D8;&#x540E;&#x7F00;&#xFF0C;&#x5F97;&#x5230;&#x4E00;&#x4E2A;&#x767E;&#x5EA6;&#x4E91;&#x94FE;&#x63A5;</h3><p><a href="https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA" target="_blank" rel="noopener">https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA</a></p>
-<p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/8.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/8.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-5&#x8F93;&#x5165;a7gh&#x5F97;&#x5230;&#x5B9D;&#x85CF;w1nd&#x7684;&#x79C1;&#x623F;&#x7167;&#xFF0C;hex&#x6253;&#x5F00;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;hint"><a href="#1-5&#x8F93;&#x5165;a7gh&#x5F97;&#x5230;&#x5B9D;&#x85CF;w1nd&#x7684;&#x79C1;&#x623F;&#x7167;&#xFF0C;hex&#x6253;&#x5F00;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;hint" class="headerlink" title="1.5&#x8F93;&#x5165;a7gh&#x5F97;&#x5230;&#x5B9D;&#x85CF;w1nd&#x7684;&#x79C1;&#x623F;&#x7167;&#xFF0C;hex&#x6253;&#x5F00;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;hint"></a>1.5&#x8F93;&#x5165;a7gh&#x5F97;&#x5230;&#x5B9D;&#x85CF;w1nd&#x7684;&#x79C1;&#x623F;&#x7167;&#xFF0C;hex&#x6253;&#x5F00;&#xFF0C;&#x5F97;&#x5230;&#x65B0;&#x7684;hint</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/9.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/9.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-6&#x770B;&#x5230;-&#x731C;&#x6D4B;base64&#xFF0C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"><a href="#1-6&#x770B;&#x5230;-&#x731C;&#x6D4B;base64&#xFF0C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;" class="headerlink" title="1.6&#x770B;&#x5230;=&#x731C;&#x6D4B;base64&#xFF0C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;"></a>1.6&#x770B;&#x5230;=&#x731C;&#x6D4B;base64&#xFF0C;&#x89E3;&#x5BC6;&#x540E;&#x5F97;&#x5230;</h3><p>hint:password is from the group leader</p>
-<h3 id="1-7&#x53BB;&#x627E;&#x7FA4;&#x4E3B;"><a href="#1-7&#x53BB;&#x627E;&#x7FA4;&#x4E3B;" class="headerlink" title="1.7&#x53BB;&#x627E;&#x7FA4;&#x4E3B;"></a>1.7&#x53BB;&#x627E;&#x7FA4;&#x4E3B;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/10.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/10.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-8&#x5C1D;&#x8BD5;&#x7528;qq&#x53F7;&#x89E3;&#x5BC6;&#xFF0C;&#x6210;&#x529F;&#x5F97;&#x5230;"><a href="#1-8&#x5C1D;&#x8BD5;&#x7528;qq&#x53F7;&#x89E3;&#x5BC6;&#xFF0C;&#x6210;&#x529F;&#x5F97;&#x5230;" class="headerlink" title="1.8&#x5C1D;&#x8BD5;&#x7528;qq&#x53F7;&#x89E3;&#x5BC6;&#xFF0C;&#x6210;&#x529F;&#x5F97;&#x5230;"></a>1.8&#x5C1D;&#x8BD5;&#x7528;qq&#x53F7;&#x89E3;&#x5BC6;&#xFF0C;&#x6210;&#x529F;&#x5F97;&#x5230;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/11.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/11.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<p>&#x7528;hex&#x6253;&#x5F00;&#x540E;&#x5F97;&#x5230;flag</p>
-<h2 id="2&#x3001;backward"><a href="#2&#x3001;backward" class="headerlink" title="2&#x3001;backward"></a>2&#x3001;backward</h2><h3 id="2-1&#x7531;hint&#x731C;&#x6D4B;&#x56FE;&#x7247;&#x4E2D;&#x9690;&#x85CF;&#x7740;&#x5012;&#x7740;&#x5199;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x7531;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x7684;GNP&#x786E;&#x8BA4;&#x8FD9;&#x4E00;&#x731C;&#x60F3;"><a href="#2-1&#x7531;hint&#x731C;&#x6D4B;&#x56FE;&#x7247;&#x4E2D;&#x9690;&#x85CF;&#x7740;&#x5012;&#x7740;&#x5199;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x7531;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x7684;GNP&#x786E;&#x8BA4;&#x8FD9;&#x4E00;&#x731C;&#x60F3;" class="headerlink" title="2.1&#x7531;hint&#x731C;&#x6D4B;&#x56FE;&#x7247;&#x4E2D;&#x9690;&#x85CF;&#x7740;&#x5012;&#x7740;&#x5199;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x7531;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x7684;GNP&#x786E;&#x8BA4;&#x8FD9;&#x4E00;&#x731C;&#x60F3;"></a>2.1&#x7531;hint&#x731C;&#x6D4B;&#x56FE;&#x7247;&#x4E2D;&#x9690;&#x85CF;&#x7740;&#x5012;&#x7740;&#x5199;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x7531;&#x6587;&#x4EF6;&#x672B;&#x5C3E;&#x7684;GNP&#x786E;&#x8BA4;&#x8FD9;&#x4E00;&#x731C;&#x60F3;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/12.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/12.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="2-2&#x5199;&#x811A;&#x672C;"><a href="#2-2&#x5199;&#x811A;&#x672C;" class="headerlink" title="2.2&#x5199;&#x811A;&#x672C;"></a>2.2&#x5199;&#x811A;&#x672C;</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=open(<span class="string">&apos;backward.png&apos;</span>,<span class="string">&apos;rb&apos;</span>).read()</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">&apos;rst.txt&apos;</span>, <span class="string">&apos;w+&apos;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">-2</span>,<span class="number">-89404</span>,<span class="number">-2</span>):</span><br><span class="line">        f.write(a[i<span class="number">-2</span>:i:<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
-<p>&#x5F97;&#x5230;&#x65B0;&#x7684;&#x6587;&#x4EF6;</p>
-<h3 id="2-3&#x5C06;&#x89E3;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5229;&#x7528;hex&#x5F62;&#x6210;&#x65B0;&#x7684;png&#x6587;&#x4EF6;"><a href="#2-3&#x5C06;&#x89E3;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5229;&#x7528;hex&#x5F62;&#x6210;&#x65B0;&#x7684;png&#x6587;&#x4EF6;" class="headerlink" title="2.3&#x5C06;&#x89E3;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5229;&#x7528;hex&#x5F62;&#x6210;&#x65B0;&#x7684;png&#x6587;&#x4EF6;"></a>2.3&#x5C06;&#x89E3;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x5229;&#x7528;hex&#x5F62;&#x6210;&#x65B0;&#x7684;png&#x6587;&#x4EF6;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/13.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/13.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h2 id="1&#x3001;&#x7B7E;&#x5230;&#x9898;"><a href="#1&#x3001;&#x7B7E;&#x5230;&#x9898;" class="headerlink" title="1&#x3001;&#x7B7E;&#x5230;&#x9898;"></a>1&#x3001;&#x7B7E;&#x5230;&#x9898;</h2><h3 id="1-1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;"><a href="#1-1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;" class="headerlink" title="1.1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;"></a>1.1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/14.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/14.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-2&#x67E5;&#x770B;&#x6E90;&#x7801;&#x65E0;&#x679C;&#x540E;&#x5C1D;&#x8BD5;&#x6293;&#x5305;"><a href="#1-2&#x67E5;&#x770B;&#x6E90;&#x7801;&#x65E0;&#x679C;&#x540E;&#x5C1D;&#x8BD5;&#x6293;&#x5305;" class="headerlink" title="1.2&#x67E5;&#x770B;&#x6E90;&#x7801;&#x65E0;&#x679C;&#x540E;&#x5C1D;&#x8BD5;&#x6293;&#x5305;"></a>1.2&#x67E5;&#x770B;&#x6E90;&#x7801;&#x65E0;&#x679C;&#x540E;&#x5C1D;&#x8BD5;&#x6293;&#x5305;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/15.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/15.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-3&#x524D;&#x5F80;&#x63D0;&#x793A;&#x6240;&#x5728;&#x7684;&#x94FE;&#x63A5;"><a href="#1-3&#x524D;&#x5F80;&#x63D0;&#x793A;&#x6240;&#x5728;&#x7684;&#x94FE;&#x63A5;" class="headerlink" title="1.3&#x524D;&#x5F80;&#x63D0;&#x793A;&#x6240;&#x5728;&#x7684;&#x94FE;&#x63A5;"></a>1.3&#x524D;&#x5F80;&#x63D0;&#x793A;&#x6240;&#x5728;&#x7684;&#x94FE;&#x63A5;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/16.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/16.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-4&#x770B;&#x5230;&#x6E90;&#x7801;&#x540E;&#x4E86;&#x89E3;&#x5230;&#x6709;&#x4E24;&#x4E2A;waf&#x9700;&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;-2&#xFF1A;strcmp&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;php&#x5F31;&#x7C7B;&#x578B;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;strcmp&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x7684;&#x6F0F;&#x6D1E;&#x7ED5;&#x8FC7;&#xFF0C;&#x540C;&#x65F6;&#x6E90;&#x7801;&#x4E2D;&#x6709;json&#x89E3;&#x7801;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x7528;json&#x7684;&#x683C;&#x5F0F;&#x6784;&#x9020;payload"><a href="#1-4&#x770B;&#x5230;&#x6E90;&#x7801;&#x540E;&#x4E86;&#x89E3;&#x5230;&#x6709;&#x4E24;&#x4E2A;waf&#x9700;&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;-2&#xFF1A;strcmp&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;php&#x5F31;&#x7C7B;&#x578B;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;strcmp&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x7684;&#x6F0F;&#x6D1E;&#x7ED5;&#x8FC7;&#xFF0C;&#x540C;&#x65F6;&#x6E90;&#x7801;&#x4E2D;&#x6709;json&#x89E3;&#x7801;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x7528;json&#x7684;&#x683C;&#x5F0F;&#x6784;&#x9020;payload" class="headerlink" title="1.4&#x770B;&#x5230;&#x6E90;&#x7801;&#x540E;&#x4E86;&#x89E3;&#x5230;&#x6709;&#x4E24;&#x4E2A;waf&#x9700;&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;== 2&#xFF1A;strcmp&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;php&#x5F31;&#x7C7B;&#x578B;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;strcmp&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x7684;&#x6F0F;&#x6D1E;&#x7ED5;&#x8FC7;&#xFF0C;&#x540C;&#x65F6;&#x6E90;&#x7801;&#x4E2D;&#x6709;json&#x89E3;&#x7801;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x7528;json&#x7684;&#x683C;&#x5F0F;&#x6784;&#x9020;payload"></a>1.4&#x770B;&#x5230;&#x6E90;&#x7801;&#x540E;&#x4E86;&#x89E3;&#x5230;&#x6709;&#x4E24;&#x4E2A;waf&#x9700;&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;== 2&#xFF1A;strcmp&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;php&#x5F31;&#x7C7B;&#x578B;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;strcmp&#x5BF9;&#x4E8E;&#x6570;&#x7EC4;&#x548C;&#x5B57;&#x7B26;&#x4E32;&#x6BD4;&#x8F83;&#x7684;&#x6F0F;&#x6D1E;&#x7ED5;&#x8FC7;&#xFF0C;&#x540C;&#x65F6;&#x6E90;&#x7801;&#x4E2D;&#x6709;json&#x89E3;&#x7801;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x56E0;&#x6B64;&#x7528;json&#x7684;&#x683C;&#x5F0F;&#x6784;&#x9020;payload</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/17.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/17.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="1-5&#x6210;&#x529F;&#x5F97;&#x5230;flag"><a href="#1-5&#x6210;&#x529F;&#x5F97;&#x5230;flag" class="headerlink" title="1.5&#x6210;&#x529F;&#x5F97;&#x5230;flag"></a>1.5&#x6210;&#x529F;&#x5F97;&#x5230;flag</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/18.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/18.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h2 id="2&#x3001;easy-eval"><a href="#2&#x3001;easy-eval" class="headerlink" title="2&#x3001;easy_eval"></a>2&#x3001;easy_eval</h2><h3 id="2-1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;"><a href="#2-1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;" class="headerlink" title="2.1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;"></a>2.1&#x6253;&#x5F00;&#x94FE;&#x63A5;&#xFF0C;&#x770B;&#x5230;&#x6E90;&#x7801;</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/19.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/19.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="2-2&#x89C2;&#x5BDF;&#x6E90;&#x7801;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;waf&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;addslashes&#x51FD;&#x6570;&#xFF0C;2&#xFF1A;&#x6B63;&#x5219;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;addslashes&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;value&#x5916;&#x52A0;&#x4E0A;-&#x5F62;&#x6210;&#x590D;&#x6742;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x6B63;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#xFF08;&#x524D;&#x52A0;&#x4E0A;-0a&#x622A;&#x65AD;&#x8FDB;&#x884C;&#x7ED5;&#x8FC7;&#xFF0C;&#x7ED5;&#x8FC7;&#x540E;&#x901A;&#x8FC7;&#x83DC;&#x5200;&#x6784;&#x9020;&#x4E00;&#x53E5;&#x8BDD;&#x6728;&#x9A6C;&#x67E5;&#x770B;flag"><a href="#2-2&#x89C2;&#x5BDF;&#x6E90;&#x7801;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;waf&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;addslashes&#x51FD;&#x6570;&#xFF0C;2&#xFF1A;&#x6B63;&#x5219;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;addslashes&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;value&#x5916;&#x52A0;&#x4E0A;-&#x5F62;&#x6210;&#x590D;&#x6742;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x6B63;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#xFF08;&#x524D;&#x52A0;&#x4E0A;-0a&#x622A;&#x65AD;&#x8FDB;&#x884C;&#x7ED5;&#x8FC7;&#xFF0C;&#x7ED5;&#x8FC7;&#x540E;&#x901A;&#x8FC7;&#x83DC;&#x5200;&#x6784;&#x9020;&#x4E00;&#x53E5;&#x8BDD;&#x6728;&#x9A6C;&#x67E5;&#x770B;flag" class="headerlink" title="2.2&#x89C2;&#x5BDF;&#x6E90;&#x7801;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;waf&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;addslashes&#x51FD;&#x6570;&#xFF0C;2&#xFF1A;&#x6B63;&#x5219;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;addslashes&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;value&#x5916;&#x52A0;&#x4E0A;${}&#x5F62;&#x6210;&#x590D;&#x6742;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x6B63;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#xFF08;&#x524D;&#x52A0;&#x4E0A;%0a&#x622A;&#x65AD;&#x8FDB;&#x884C;&#x7ED5;&#x8FC7;&#xFF0C;&#x7ED5;&#x8FC7;&#x540E;&#x901A;&#x8FC7;&#x83DC;&#x5200;&#x6784;&#x9020;&#x4E00;&#x53E5;&#x8BDD;&#x6728;&#x9A6C;&#x67E5;&#x770B;flag"></a>2.2&#x89C2;&#x5BDF;&#x6E90;&#x7801;&#xFF0C;&#x6709;&#x4E24;&#x4E2A;waf&#x8981;&#x7ED5;&#x8FC7;1&#xFF1A;addslashes&#x51FD;&#x6570;&#xFF0C;2&#xFF1A;&#x6B63;&#x5219;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;addslashes&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;value&#x5916;&#x52A0;&#x4E0A;${}&#x5F62;&#x6210;&#x590D;&#x6742;&#x53D8;&#x91CF;&#x7684;&#x65B9;&#x5F0F;&#x7ED5;&#x8FC7;&#xFF0C;&#x7B2C;&#x4E8C;&#x4E2A;&#x6B63;&#x5219;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5728;&#xFF08;&#x524D;&#x52A0;&#x4E0A;%0a&#x622A;&#x65AD;&#x8FDB;&#x884C;&#x7ED5;&#x8FC7;&#xFF0C;&#x7ED5;&#x8FC7;&#x540E;&#x901A;&#x8FC7;&#x83DC;&#x5200;&#x6784;&#x9020;&#x4E00;&#x53E5;&#x8BDD;&#x6728;&#x9A6C;&#x67E5;&#x770B;flag</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/20.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/20.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
-<h3 id="2-3&#x5F97;&#x5230;flag"><a href="#2-3&#x5F97;&#x5230;flag" class="headerlink" title="2.3&#x5F97;&#x5230;flag"></a>2.3&#x5F97;&#x5230;flag</h3><p><a class="magnific-img" href="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/21.png"><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/21.png" alt="&#x5FAE;&#x4FE1;&#x56FE;&#x7247;_20181012144505" class="ui centered image"></a></p>
+<h3 id="3-3分析完思路，通过脚本进行解密"><a href="#3-3分析完思路，通过脚本进行解密" class="headerlink" title="3.3分析完思路，通过脚本进行解密"></a>3.3分析完思路，通过脚本进行解密</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">xor</span><span class="params">(a,b)</span>:</span></span><br><span class="line">    <span class="keyword">assert</span> len(a)==len(b)</span><br><span class="line">    c=<span class="string">""</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(len(a)):</span><br><span class="line">        c+=chr(ord(a[i])^ord(b[i]))</span><br><span class="line">    <span class="keyword">return</span> c</span><br><span class="line">b=<span class="string">"deec78f07a169673679822c2b06c3b96f9fb225dc5404b532dd8b04a992774e8ec76ac7f6322f3492534033dd5953f06d601c14d3ad3"</span></span><br><span class="line">c=<span class="string">"aa5467efd0b871e3e5fc89f146f766b82b5145c005a4872fd1ef11bf0505027fc7f0eb0db49501832831c7b204492dcdf4a6f0e6d110"</span></span><br><span class="line">m=<span class="string">"c50a135a56c000a4c394549407bb2cab1349ebdc4ee31e0601e33b47d3752381fc82b3bd37fa65d9a9740890fe25f6e8ba9135d3499f"</span></span><br><span class="line">c=c.decode(<span class="string">"hex"</span>)</span><br><span class="line">b=b.decode(<span class="string">"hex"</span>)</span><br><span class="line">m=m.decode(<span class="string">"hex"</span>)</span><br><span class="line"></span><br><span class="line">c1=c[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">c2=c[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">b1=b[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">b2=b[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">m1=m[<span class="number">0</span>:<span class="number">27</span>]</span><br><span class="line">m2=m[<span class="number">27</span>:<span class="number">54</span>]</span><br><span class="line">x=xor(xor(xor(b1,b2),xor(c1,c2)),m1)+xor(xor(b1,c1),m2)</span><br><span class="line"><span class="keyword">print</span> (x)</span><br><span class="line"></span><br><span class="line">o=open(<span class="string">"base_and_fez"</span>,<span class="string">"wb"</span>)</span><br><span class="line">o.write(x)</span><br></pre></td></tr></table></figure>
+<h3 id="3-4解码后得到"><a href="#3-4解码后得到" class="headerlink" title="3.4解码后得到"></a>3.4解码后得到</h3><p>D..3kEas3’HU;-tAN2PSE%uKV?Y3kj&lt;+Re#?SQV/2)&amp;BTBk(^]I/~&gt;</p>
+<h3 id="3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"><a href="#3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag" class="headerlink" title="3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"></a>3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag</h3><p>makerctf{Ba4e85_p1us_fesTe1l_1s_50_nice_}</p>
+<h1 id="misc"><a href="#misc" class="headerlink" title="misc"></a>misc</h1><h2 id="1、究极脑洞题"><a href="#1、究极脑洞题" class="headerlink" title="1、究极脑洞题"></a>1、究极脑洞题</h2><h3 id="1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号"><a href="#1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号" class="headerlink" title="1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号"></a>1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号</h3><p>316f526f614766766855384d4b73396a3865316f716d41<br>hint：2698852664</p>
+<h3 id="1-2、在qq中搜qq号，看到"><a href="#1-2、在qq中搜qq号，看到" class="headerlink" title="1.2、在qq中搜qq号，看到"></a>1.2、在qq中搜qq号，看到</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/7.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"><a href="#1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到" class="headerlink" title="1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"></a>1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到</h3><p>1oRoaGfvhU8MKs9j8e1oqmA</p>
+<h3 id="1-4将其加上百度网盘后缀，得到一个百度云链接"><a href="#1-4将其加上百度网盘后缀，得到一个百度云链接" class="headerlink" title="1.4将其加上百度网盘后缀，得到一个百度云链接"></a>1.4将其加上百度网盘后缀，得到一个百度云链接</h3><p><a href="https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA" target="_blank" rel="noopener">https://pan.baidu.com/share/init?surl=oRoaGfvhU8MKs9j8e1oqmA</a></p>
+<p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/8.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"><a href="#1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint" class="headerlink" title="1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"></a>1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/9.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-6看到-猜测base64，解密后得到"><a href="#1-6看到-猜测base64，解密后得到" class="headerlink" title="1.6看到=猜测base64，解密后得到"></a>1.6看到=猜测base64，解密后得到</h3><p>hint:password is from the group leader</p>
+<h3 id="1-7去找群主"><a href="#1-7去找群主" class="headerlink" title="1.7去找群主"></a>1.7去找群主</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/10.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-8尝试用qq号解密，成功得到"><a href="#1-8尝试用qq号解密，成功得到" class="headerlink" title="1.8尝试用qq号解密，成功得到"></a>1.8尝试用qq号解密，成功得到</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/11.png" alt="微信图片_20181012144505"></p>
+<p>用hex打开后得到flag</p>
+<h2 id="2、backward"><a href="#2、backward" class="headerlink" title="2、backward"></a>2、backward</h2><h3 id="2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"><a href="#2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想" class="headerlink" title="2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"></a>2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/12.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-2写脚本"><a href="#2-2写脚本" class="headerlink" title="2.2写脚本"></a>2.2写脚本</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=open(<span class="string">'backward.png'</span>,<span class="string">'rb'</span>).read()</span><br><span class="line"><span class="keyword">with</span> open(<span class="string">'rst.txt'</span>, <span class="string">'w+'</span>) <span class="keyword">as</span> f:</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">-2</span>,<span class="number">-89404</span>,<span class="number">-2</span>):</span><br><span class="line">        f.write(a[i<span class="number">-2</span>:i:<span class="number">1</span>])</span><br></pre></td></tr></table></figure>
+<p>得到新的文件</p>
+<h3 id="2-3将解出的结果利用hex形成新的png文件"><a href="#2-3将解出的结果利用hex形成新的png文件" class="headerlink" title="2.3将解出的结果利用hex形成新的png文件"></a>2.3将解出的结果利用hex形成新的png文件</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/13.png" alt="微信图片_20181012144505"></p>
+<h1 id="web"><a href="#web" class="headerlink" title="web"></a>web</h1><h2 id="1、签到题"><a href="#1、签到题" class="headerlink" title="1、签到题"></a>1、签到题</h2><h3 id="1-1打开链接，看到源码"><a href="#1-1打开链接，看到源码" class="headerlink" title="1.1打开链接，看到源码"></a>1.1打开链接，看到源码</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/14.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-2查看源码无果后尝试抓包"><a href="#1-2查看源码无果后尝试抓包" class="headerlink" title="1.2查看源码无果后尝试抓包"></a>1.2查看源码无果后尝试抓包</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/15.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-3前往提示所在的链接"><a href="#1-3前往提示所在的链接" class="headerlink" title="1.3前往提示所在的链接"></a>1.3前往提示所在的链接</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/16.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"><a href="#1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload" class="headerlink" title="1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"></a>1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/17.png" alt="微信图片_20181012144505"></p>
+<h3 id="1-5成功得到flag"><a href="#1-5成功得到flag" class="headerlink" title="1.5成功得到flag"></a>1.5成功得到flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/18.png" alt="微信图片_20181012144505"></p>
+<h2 id="2、easy-eval"><a href="#2、easy-eval" class="headerlink" title="2、easy_eval"></a>2、easy_eval</h2><h3 id="2-1打开链接，看到源码"><a href="#2-1打开链接，看到源码" class="headerlink" title="2.1打开链接，看到源码"></a>2.1打开链接，看到源码</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/19.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"><a href="#2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag" class="headerlink" title="2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"></a>2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/20.png" alt="微信图片_20181012144505"></p>
+<h3 id="2-3得到flag"><a href="#2-3得到flag" class="headerlink" title="2.3得到flag"></a>2.3得到flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForThirdMD/21.png" alt="微信图片_20181012144505"></p>
 
-                        
-                    </div>
+      
+    </div>
+    
+  </div>
+  
+    
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2019/04/15/wp-for-makerctf/">wp_for_makerctf</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">John Doe</a></p>
+        <p><span>发布时间:</span>2019-04-15, 23:09:28</p>
+        <p><span>最后更新:</span>2019-04-16, 21:00:05</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2019/04/15/wp-for-makerctf/" title="wp_for_makerctf">http://yoursite.com/2019/04/15/wp-for-makerctf/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://yoursite.com/2019/04/15/wp-for-makerctf/　　作者: John Doe" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
-                    
-                    
-                    
 
-                    <div class="description post-description">
-    <span class="post-description-item">
-        <time datetime="2019-04-15T15:09:28.000Z" itemprop="datePublished">2019-04-15</time>
 
-    </span>
-    <span class="post-description-item">
+    <nav id="article-nav">
         
-    </span>
-</div>
-
-                </div>
-                
-                <div id="pagination" class="nav-web ui text container pagination">
-
-    <div class="ui stackable two column divided grid container">
-        <div class="row">
-            <div class="column nav-left">
-                
-
-                <a class="ui tiny button disabled"><i class="angle left icon"></i>前一篇</a>
-
-                
-            </div>
-            <div class="column nav-right">
-                
-
-                <a href="/2018/10/17/在ubuntu虚拟机上搭建php运行环境/" class="ui tiny button">
-                    
+        
+            <div id="article-nav-older" class="article-nav-title">
+                <a href="/2018/10/17/在ubuntu虚拟机上搭建php运行环境/">
                     ubuntu虚拟机上搭建php运行环境
-                    
-                    <i class="angle right icon"></i></a>
+                </a>
+            </div>
+        
+    </nav>
+
+  
+</article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#crypto"><span class="toc-number">1.</span> <span class="toc-text">crypto</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、easy-rsa"><span class="toc-number">1.1.</span> <span class="toc-text">1、easy_rsa</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1、先读一下n"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.1、先读一下n</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2、写个脚本转成十进制"><span class="toc-number">1.1.2.</span> <span class="toc-text">1.2、写个脚本转成十进制</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3、用yafu分解一下"><span class="toc-number">1.1.3.</span> <span class="toc-text">1.3、用yafu分解一下</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4、写一个脚本解出私钥然后存成pem文件"><span class="toc-number">1.1.4.</span> <span class="toc-text">1.4、写一个脚本解出私钥然后存成pem文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密"><span class="toc-number">1.1.5.</span> <span class="toc-text">1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、B-amp-C"><span class="toc-number">1.2.</span> <span class="toc-text">2、B&amp;C</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1、看到密码，由题目想到base家族以及变异凯撒"><span class="toc-number">1.2.1.</span> <span class="toc-text">2.1、看到密码，由题目想到base家族以及变异凯撒</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"><span class="toc-number">1.2.3.</span> <span class="toc-text">2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"><span class="toc-number">1.2.4.</span> <span class="toc-text">2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"><span class="toc-number">1.2.5.</span> <span class="toc-text">2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6、运行脚本-得到flag。"><span class="toc-number">1.2.6.</span> <span class="toc-text">2.6、运行脚本,得到flag。</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、base-amp-fez"><span class="toc-number">1.3.</span> <span class="toc-text">3、base&amp;fez</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1打开题目看到源码"><span class="toc-number">1.3.1.</span> <span class="toc-text">3.1打开题目看到源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"><span class="toc-number">1.3.2.</span> <span class="toc-text">3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3分析完思路，通过脚本进行解密"><span class="toc-number">1.3.3.</span> <span class="toc-text">3.3分析完思路，通过脚本进行解密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4解码后得到"><span class="toc-number">1.3.4.</span> <span class="toc-text">3.4解码后得到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"><span class="toc-number">1.3.5.</span> <span class="toc-text">3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#misc"><span class="toc-number">2.</span> <span class="toc-text">misc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、究极脑洞题"><span class="toc-number">2.1.</span> <span class="toc-text">1、究极脑洞题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号"><span class="toc-number">2.1.1.</span> <span class="toc-text">1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2、在qq中搜qq号，看到"><span class="toc-number">2.1.2.</span> <span class="toc-text">1.2、在qq中搜qq号，看到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"><span class="toc-number">2.1.3.</span> <span class="toc-text">1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4将其加上百度网盘后缀，得到一个百度云链接"><span class="toc-number">2.1.4.</span> <span class="toc-text">1.4将其加上百度网盘后缀，得到一个百度云链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"><span class="toc-number">2.1.5.</span> <span class="toc-text">1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-6看到-猜测base64，解密后得到"><span class="toc-number">2.1.6.</span> <span class="toc-text">1.6看到=猜测base64，解密后得到</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-7去找群主"><span class="toc-number">2.1.7.</span> <span class="toc-text">1.7去找群主</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-8尝试用qq号解密，成功得到"><span class="toc-number">2.1.8.</span> <span class="toc-text">1.8尝试用qq号解密，成功得到</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、backward"><span class="toc-number">2.2.</span> <span class="toc-text">2、backward</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"><span class="toc-number">2.2.1.</span> <span class="toc-text">2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2写脚本"><span class="toc-number">2.2.2.</span> <span class="toc-text">2.2写脚本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3将解出的结果利用hex形成新的png文件"><span class="toc-number">2.2.3.</span> <span class="toc-text">2.3将解出的结果利用hex形成新的png文件</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web"><span class="toc-number">3.</span> <span class="toc-text">web</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、签到题"><span class="toc-number">3.1.</span> <span class="toc-text">1、签到题</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1打开链接，看到源码"><span class="toc-number">3.1.1.</span> <span class="toc-text">1.1打开链接，看到源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2查看源码无果后尝试抓包"><span class="toc-number">3.1.2.</span> <span class="toc-text">1.2查看源码无果后尝试抓包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-3前往提示所在的链接"><span class="toc-number">3.1.3.</span> <span class="toc-text">1.3前往提示所在的链接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"><span class="toc-number">3.1.4.</span> <span class="toc-text">1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-5成功得到flag"><span class="toc-number">3.1.5.</span> <span class="toc-text">1.5成功得到flag</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、easy-eval"><span class="toc-number">3.2.</span> <span class="toc-text">2、easy_eval</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1打开链接，看到源码"><span class="toc-number">3.2.1.</span> <span class="toc-text">2.1打开链接，看到源码</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"><span class="toc-number">3.2.2.</span> <span class="toc-text">2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3得到flag"><span class="toc-number">3.2.3.</span> <span class="toc-text">2.3得到flag</span></a></li></ol></li></ol></li></ol>
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
+
+
+
+    
+<div class="share">
+    
+        <div class="bdsharebuttonbox">
+            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
+            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
+            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
+            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
+            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
+            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
+        </div>
+        <script>
+            window._bd_share_config={
+                "common":{"bdSnsKey":{},"bdText":"wp_for_makerctf　| d1lute的blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    
+
+    
+</div>
+
+
+
+
+
+
+
+    
+
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/2018/10/17/在ubuntu虚拟机上搭建php运行环境/" title="下一篇: ubuntu虚拟机上搭建php运行环境">
+                <i class="fa fa-angle-right"></i>
+            </a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/04/15/wp-for-makerctf/">wp_for_makerctf</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/10/17/在ubuntu虚拟机上搭建php运行环境/">ubuntu虚拟机上搭建php运行环境</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/25/搭建vps/">搭建vps</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/09/25/搭建个人博客/">搭建个人博客</a></li></ul>
+
+
+
+
+    <script>
+        
+    </script>
+</div>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2019 John Doe
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style="display:none">
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
                 
             </div>
-        </div>
+        
     </div>
+</footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
+
+
+
+
+
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
 </div>
-                
-            </div>
-
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
             
-            <div class="three wide computer three wide tablet column">
-
-                <div class="ui sticky article-toc" id="article-toc">
-                    <!-- toc -->
-                    <ol class="ui ordered list"><li><a href="#crypto"><span>crypto</span></a><ol><li><a href="#1、easy-rsa"><span>1、easy_rsa</span></a><ol><li><a href="#1-1、先读一下n"><span>1.1、先读一下n</span></a></li><li><a href="#1-2、写个脚本转成十进制"><span>1.2、写个脚本转成十进制</span></a></li><li><a href="#1-3、用yafu分解一下"><span>1.3、用yafu分解一下</span></a></li><li><a href="#1-4、写一个脚本解出私钥然后存成pem文件"><span>1.4、写一个脚本解出私钥然后存成pem文件</span></a></li><li><a href="#1-5、将得到的私钥和flag以及公钥放在一起，用openssl解密"><span>1.5、将得到的私钥和flag以及公钥放在一起，用openssl解密</span></a></li></ol></li><li><a href="#2、B-amp-C"><span>2、B&C</span></a><ol><li><a href="#2-1、看到密码，由题目想到base家族以及变异凯撒"><span>2.1、看到密码，由题目想到base家族以及变异凯撒</span></a></li><li><a href="#2-2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到"><span>2.2、一开始只有大写字母以及数字，推测是base32加密，用脚本解密后得到</span></a></li><li><a href="#2-3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到"><span>2.3、看到同时有大小写字母和数字以及等号，推测还有base64加密，用脚本解密后得到</span></a></li><li><a href="#2-4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关"><span>2.4、由于题目中提示有变异凯撒和base，推测与ascii码的位移有关</span></a></li><li><a href="#2-5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密"><span>2.5、由此推测出变异凯撒原理是在ascii码上进行的吗每位位移数加一的加密，写一个脚本解密</span></a></li><li><a href="#2-6、运行脚本-得到flag。"><span>2.6、运行脚本,得到flag。</span></a></li></ol></li><li><a href="#3、base-amp-fez"><span>3、base&fez</span></a><ol><li><a href="#3-1打开题目看到源码"><span>3.1打开题目看到源码</span></a></li><li><a href="#3-2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题"><span>3.2可以看到题目本身是以异或为核心的加密方法，也就是说这种加密方式可以通过异或同一个k两次还原来进行解题</span></a></li><li><a href="#3-3分析完思路，通过脚本进行解密"><span>3.3分析完思路，通过脚本进行解密</span></a></li><li><a href="#3-4解码后得到"><span>3.4解码后得到</span></a></li><li><a href="#3-5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag"><span>3.5不断尝试各种base解密，以及经历了大量自我怀疑后，用base85解密得到flag</span></a></li></ol></li></ol></li><li><a href="#misc"><span>misc</span></a><ol><li><a href="#1、究极脑洞题"><span>1、究极脑洞题</span></a><ol><li><a href="#1-1、看完题目，由脑洞题，脑洞猜测hint指向qq号"><span>1.1、看完题目，由脑洞题，脑洞猜测hint指向qq号</span></a></li><li><a href="#1-2、在qq中搜qq号，看到"><span>1.2、在qq中搜qq号，看到</span></a></li><li><a href="#1-3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到"><span>1.3、看到a7gh脑洞猜测是百度云密码，因此字符串可能指向百度云后缀，由于该字符串看起来很像十六进制码，因此base16解密一下得到</span></a></li><li><a href="#1-4将其加上百度网盘后缀，得到一个百度云链接"><span>1.4将其加上百度网盘后缀，得到一个百度云链接</span></a></li><li><a href="#1-5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint"><span>1.5输入a7gh得到宝藏w1nd的私房照，hex打开，得到新的hint</span></a></li><li><a href="#1-6看到-猜测base64，解密后得到"><span>1.6看到=猜测base64，解密后得到</span></a></li><li><a href="#1-7去找群主"><span>1.7去找群主</span></a></li><li><a href="#1-8尝试用qq号解密，成功得到"><span>1.8尝试用qq号解密，成功得到</span></a></li></ol></li><li><a href="#2、backward"><span>2、backward</span></a><ol><li><a href="#2-1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想"><span>2.1由hint猜测图片中隐藏着倒着写的文件，并由文件末尾的GNP确认这一猜想</span></a></li><li><a href="#2-2写脚本"><span>2.2写脚本</span></a></li><li><a href="#2-3将解出的结果利用hex形成新的png文件"><span>2.3将解出的结果利用hex形成新的png文件</span></a></li></ol></li></ol></li><li><a href="#web"><span>web</span></a><ol><li><a href="#1、签到题"><span>1、签到题</span></a><ol><li><a href="#1-1打开链接，看到源码"><span>1.1打开链接，看到源码</span></a></li><li><a href="#1-2查看源码无果后尝试抓包"><span>1.2查看源码无果后尝试抓包</span></a></li><li><a href="#1-3前往提示所在的链接"><span>1.3前往提示所在的链接</span></a></li><li><a href="#1-4看到源码后了解到有两个waf需要绕过1：-2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload"><span>1.4看到源码后了解到有两个waf需要绕过1：== 2：strcmp，第一个可以通过php弱类型绕过，第二个可以通过strcmp对于数组和字符串比较的漏洞绕过，同时源码中有json解码的函数，因此用json的格式构造payload</span></a></li><li><a href="#1-5成功得到flag"><span>1.5成功得到flag</span></a></li></ol></li><li><a href="#2、easy-eval"><span>2、easy_eval</span></a><ol><li><a href="#2-1打开链接，看到源码"><span>2.1打开链接，看到源码</span></a></li><li><a href="#2-2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上-形成复杂变量的方式绕过，第二个正则可以通过在（前加上-0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag"><span>2.2观察源码，有两个waf要绕过1：addslashes函数，2：正则，第一个addslashes可以通过在value外加上${}形成复杂变量的方式绕过，第二个正则可以通过在（前加上%0a截断进行绕过，绕过后通过菜刀构造一句话木马查看flag</span></a></li><li><a href="#2-3得到flag"><span>2.3得到flag</span></a></li></ol></li></ol></li></ol>
-                </div>
-
-            </div>
             
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
 
-        </div>
-    </div>
-</div>
-
-
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
-        </div>
-        <div class="ui vertical footer segment">
-    <div class="ui center aligned container">
-        <div class="ui inverted section divider"></div>
-        &copy; 2019 <a href="/">John Doe</a>,
-        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a href="http://hexo.io/" target="_blank">Hexo</a>.
-    </div>
-</div>
-
-    </div>
-
-
-
-
-<!-- scripts list from theme config.yml -->
-
-<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
-
-<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
-
-<script src="/js/semantic-ui-algolia.js"></script>
-
-<script src="/js/aloha-events.js"></script>
-
-
-
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
 </body>
 </html>

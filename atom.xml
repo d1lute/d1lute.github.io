@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-16T16:19:38.882Z</updated>
+  <updated>2019-04-17T05:32:48.827Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,50 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>南邮ctf（6-10题）</title>
+    <link href="http://yoursite.com/2019/04/17/%E5%8D%97%E9%82%AEctf%EF%BC%886-10%E9%A2%98%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/04/17/南邮ctf（6-10题）/</id>
+    <published>2019-04-17T05:06:42.000Z</published>
+    <updated>2019-04-17T05:32:48.827Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="南邮ctf练习平台"><a href="#南邮ctf练习平台" class="headerlink" title="南邮ctf练习平台"></a>南邮ctf练习平台</h1><h2 id="6、AAencode"><a href="#6、AAencode" class="headerlink" title="6、AAencode"></a>6、AAencode</h2><h3 id="6-1打开看到奇怪的东西"><a href="#6-1打开看到奇怪的东西" class="headerlink" title="6.1打开看到奇怪的东西"></a>6.1打开看到奇怪的东西</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/6.png" alt="1"></p><h3 id="6-2用unicode打开"><a href="#6-2用unicode打开" class="headerlink" title="6.2用unicode打开"></a>6.2用unicode打开</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/7.png" alt="7"></p><h3 id="6-3看起来有点像jsfuck，于是直接在chrome的console里输入，得到flag"><a href="#6-3看起来有点像jsfuck，于是直接在chrome的console里输入，得到flag" class="headerlink" title="6.3看起来有点像jsfuck，于是直接在chrome的console里输入，得到flag"></a>6.3看起来有点像jsfuck，于是直接在chrome的console里输入，得到flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/8.png" alt="8"></p><h2 id="7、单身二十年"><a href="#7、单身二十年" class="headerlink" title="7、单身二十年"></a>7、单身二十年</h2><h3 id="7-1、打开看到"><a href="#7-1、打开看到" class="headerlink" title="7.1、打开看到"></a>7.1、打开看到</h3><p><img src="C:\Users\d1lute\Desktop\picture\46.png" alt="46"></p><h3 id="7-2、按照提示"><a href="#7-2、按照提示" class="headerlink" title="7.2、按照提示"></a>7.2、按照提示</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="C:\Users\d1lute\Desktop\picture\47.png" alt="47"></h3><h3 id="7-3、抓包看看，在响应包里看到"><a href="#7-3、抓包看看，在响应包里看到" class="headerlink" title="7 .3、抓包看看，在响应包里看到"></a>7 .3、抓包看看，在响应包里看到</h3><p><img src="C:\Users\d1lute\Desktop\picture\48.png" alt="48"></p><h2 id="8、phpdecode"><a href="#8、phpdecode" class="headerlink" title="8、phpdecode"></a>8、phpdecode</h2><h3 id="​-8-1、题目"><a href="#​-8-1、题目" class="headerlink" title="​    8.1、题目"></a>​    8.1、题目</h3><p><img src="C:\Users\d1lute\Desktop\picture\49.png" alt="49"></p><h3 id="8-2、这里只需要在本地的php环境里运行一下就行了，需要注意的是eval是把字符串当作函数执行，不会把函数结果打印出来，这里要改成echo才能把函数结果打印出来，得到flag"><a href="#8-2、这里只需要在本地的php环境里运行一下就行了，需要注意的是eval是把字符串当作函数执行，不会把函数结果打印出来，这里要改成echo才能把函数结果打印出来，得到flag" class="headerlink" title="8.2、这里只需要在本地的php环境里运行一下就行了，需要注意的是eval是把字符串当作函数执行，不会把函数结果打印出来，这里要改成echo才能把函数结果打印出来，得到flag"></a>8.2、这里只需要在本地的php环境里运行一下就行了，需要注意的是eval是把字符串当作函数执行，不会把函数结果打印出来，这里要改成echo才能把函数结果打印出来，得到flag</h3><p><img src="C:\Users\d1lute\Desktop\picture\50.png" alt="50"></p><h2 id="9、文件包含"><a href="#9、文件包含" class="headerlink" title="9、文件包含"></a>9、文件包含</h2><h3 id="9-1、打开链接"><a href="#9-1、打开链接" class="headerlink" title="9.1、打开链接"></a>9.1、打开链接</h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="C:\Users\d1lute\Desktop\picture\51.png" alt="51"></h3><h3 id="​-9-2、进入，看到上方有一个提交get参数file，同时联想文件包含，想到php伪协议"><a href="#​-9-2、进入，看到上方有一个提交get参数file，同时联想文件包含，想到php伪协议" class="headerlink" title="​    9.2、进入，看到上方有一个提交get参数file，同时联想文件包含，想到php伪协议"></a>​    9.2、进入，看到上方有一个提交get参数file，同时联想文件包含，想到php伪协议</h3><p><img src="C:\Users\d1lute\Desktop\picture\52.png" alt="52"></p><h3 id="9-3、构造payload"><a href="#9-3、构造payload" class="headerlink" title="9.3、构造payload"></a>9.3、构造payload</h3><p><img src="C:\Users\d1lute\Desktop\picture\53.png" alt="53"></p><h3 id="​-9-4、base64解码后得到"><a href="#​-9-4、base64解码后得到" class="headerlink" title="​    9.4、base64解码后得到"></a>​    9.4、base64解码后得到</h3><p><img src="C:\Users\d1lute\Desktop\picture\54.png" alt="54"></p><h2 id="10、单身一百年也没用"><a href="#10、单身一百年也没用" class="headerlink" title="10、单身一百年也没用"></a>10、单身一百年也没用</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;南邮ctf练习平台&quot;&gt;&lt;a href=&quot;#南邮ctf练习平台&quot; class=&quot;headerlink&quot; title=&quot;南邮ctf练习平台&quot;&gt;&lt;/a&gt;南邮ctf练习平台&lt;/h1&gt;&lt;h2 id=&quot;6、AAencode&quot;&gt;&lt;a href=&quot;#6、AAencode&quot; cla
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>南邮ctf（1-5题）</title>
+    <link href="http://yoursite.com/2019/04/17/%E5%8D%97%E9%82%AEctf%EF%BC%881-5%E9%A2%98%EF%BC%89/"/>
+    <id>http://yoursite.com/2019/04/17/南邮ctf（1-5题）/</id>
+    <published>2019-04-17T04:28:14.000Z</published>
+    <updated>2019-04-17T05:07:05.136Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="南邮ctf练习平台"><a href="#南邮ctf练习平台" class="headerlink" title="南邮ctf练习平台"></a>南邮ctf练习平台</h1><h2 id="1、签到题"><a href="#1、签到题" class="headerlink" title="1、签到题"></a>1、签到题</h2><h3 id="1-1、打开"><a href="#1-1、打开" class="headerlink" title="1.1、打开"></a>1.1、打开</h3><h3 id=""><a href="#" class="headerlink" title=""></a><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/35.png" alt="35"></h3><h3 id="1-2、查看源码直接得到"><a href="#1-2、查看源码直接得到" class="headerlink" title="1.2、查看源码直接得到"></a>1.2、查看源码直接得到</h3><h3 id="-1"><a href="#-1" class="headerlink" title=""></a><img src="C:\Users\d1lute\Desktop\picture\36.png" alt="36"></h3><h2 id="2、md5-collision"><a href="#2、md5-collision" class="headerlink" title="2、md5 collision"></a>2、md5 collision</h2><h2 id="2-1、题目给出提示"><a href="#2-1、题目给出提示" class="headerlink" title="2.1、题目给出提示"></a>2.1、题目给出提示</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/37.png" alt="37"></p><h2 id="2-2、-php中-的判断会将所有变量转换成数字在进行判断，而这里的md5加密后是-一串0e开头的字符串，所以只要再提交一个加密后0e开头的字符串就行，举例而言：s878926199a"><a href="#2-2、-php中-的判断会将所有变量转换成数字在进行判断，而这里的md5加密后是-一串0e开头的字符串，所以只要再提交一个加密后0e开头的字符串就行，举例而言：s878926199a" class="headerlink" title="2.2、   php中==的判断会将所有变量转换成数字在进行判断，而这里的md5加密后是 一串0e开头的字符串，所以只要再提交一个加密后0e开头的字符串就行，举例而言：s878926199a"></a>2.2、   php中==的判断会将所有变量转换成数字在进行判断，而这里的md5加密后是 一串0e开头的字符串，所以只要再提交一个加密后0e开头的字符串就行，举例而言：s878926199a</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/38.png" alt="38"></p><h2 id="3、签到2"><a href="#3、签到2" class="headerlink" title="3、签到2"></a>3、签到2</h2><h3 id="3-1、打开"><a href="#3-1、打开" class="headerlink" title="3.1、打开"></a>3.1、打开</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/39.png" alt="39"></p><h3 id="3-2、发现输入位数受到限制，这里有两种方法，1：这里是前端进行的限制，可以直接删掉函数中对这里的限制，2：直接post改包提交口令，这里用了第一种方法"><a href="#3-2、发现输入位数受到限制，这里有两种方法，1：这里是前端进行的限制，可以直接删掉函数中对这里的限制，2：直接post改包提交口令，这里用了第一种方法" class="headerlink" title="3.2、发现输入位数受到限制，这里有两种方法，1：这里是前端进行的限制，可以直接删掉函数中对这里的限制，2：直接post改包提交口令，这里用了第一种方法"></a>3.2、发现输入位数受到限制，这里有两种方法，1：这里是前端进行的限制，可以直接删掉函数中对这里的限制，2：直接post改包提交口令，这里用了第一种方法</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/40.png" alt="40"></p><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/41.png" alt="41"></p><h2 id="4、这题真不是web"><a href="#4、这题真不是web" class="headerlink" title="4、这题真不是web"></a>4、这题真不是web</h2><h3 id="4-1、进入"><a href="#4-1、进入" class="headerlink" title="4.1、进入"></a>4.1、进入</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/4.png" alt="1"></p><h3 id="4-2、尝试了各种抓包，f12之后终于确认，这题居然真的不是web"><a href="#4-2、尝试了各种抓包，f12之后终于确认，这题居然真的不是web" class="headerlink" title="4.2、尝试了各种抓包，f12之后终于确认，这题居然真的不是web"></a>4.2、尝试了各种抓包，f12之后终于确认，这题居然真的不是web</h3><p>下载下来图片用ida打开得到了flag</p><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/5.png" alt="1"></p><h2 id="5、层层递进"><a href="#5、层层递进" class="headerlink" title="5、层层递进"></a>5、层层递进</h2><h3 id="​-5-1、在源码看到奇怪的东西，指向so-html"><a href="#​-5-1、在源码看到奇怪的东西，指向so-html" class="headerlink" title="​    5.1、在源码看到奇怪的东西，指向so.html"></a>​    5.1、在源码看到奇怪的东西，指向so.html</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/42.png" alt="42"></p><h3 id="5-2、进入后又发现了一个新的指向"><a href="#5-2、进入后又发现了一个新的指向" class="headerlink" title="5.2、进入后又发现了一个新的指向"></a>5.2、进入后又发现了一个新的指向</h3><h3 id="-2"><a href="#-2" class="headerlink" title=""></a><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/43.png" alt="43"></h3><h3 id="​-5-3、进入后发现"><a href="#​-5-3、进入后发现" class="headerlink" title="​    5.3、进入后发现"></a>​    5.3、进入后发现</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/44.png" alt="44"></p><h3 id="​-5-4、打开源码发现了竖着的flag"><a href="#​-5-4、打开源码发现了竖着的flag" class="headerlink" title="​    5.4、打开源码发现了竖着的flag"></a>​    5.4、打开源码发现了竖着的flag</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFourthMD/45.png" alt="45"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;南邮ctf练习平台&quot;&gt;&lt;a href=&quot;#南邮ctf练习平台&quot; class=&quot;headerlink&quot; title=&quot;南邮ctf练习平台&quot;&gt;&lt;/a&gt;南邮ctf练习平台&lt;/h1&gt;&lt;h2 id=&quot;1、签到题&quot;&gt;&lt;a href=&quot;#1、签到题&quot; class=&quot;header
+      
+    
+    </summary>
+    
+    
+      <category term="南邮ctf练习平台" scheme="http://yoursite.com/tags/%E5%8D%97%E9%82%AEctf%E7%BB%83%E4%B9%A0%E5%B9%B3%E5%8F%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>wp_for_makerctf</title>
@@ -86,29 +130,6 @@
   </entry>
   
   <entry>
-    <title>搭建vps</title>
-    <link href="http://yoursite.com/2018/09/25/%E6%90%AD%E5%BB%BAvps/"/>
-    <id>http://yoursite.com/2018/09/25/搭建vps/</id>
-    <published>2018-09-25T13:14:34.000Z</published>
-    <updated>2019-04-16T16:19:14.760Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="vps搭建"><a href="#vps搭建" class="headerlink" title="vps搭建"></a>vps搭建</h1><h2 id="1、租用一个国外的vps服务器（我选择了vultr）"><a href="#1、租用一个国外的vps服务器（我选择了vultr）" class="headerlink" title="1、租用一个国外的vps服务器（我选择了vultr）"></a>1、租用一个国外的vps服务器（我选择了vultr）</h2><h3 id="1-2、选择服务器位置（我选了最近的东京）"><a href="#1-2、选择服务器位置（我选了最近的东京）" class="headerlink" title="1.2、选择服务器位置（我选了最近的东京）"></a>1.2、选择服务器位置（我选了最近的东京）</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/30.png" alt="微信图片_20180924130119"></p><h3 id="1-2-系统根据网上信息选择了插件兼容度最高的centos"><a href="#1-2-系统根据网上信息选择了插件兼容度最高的centos" class="headerlink" title="1.2 系统根据网上信息选择了插件兼容度最高的centos"></a>1.2 系统根据网上信息选择了插件兼容度最高的centos</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/31.png" alt="微信图片_20180924130122"></p><h3 id="1-3-给主机命名"><a href="#1-3-给主机命名" class="headerlink" title="1.3 给主机命名"></a>1.3 给主机命名</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/32.png" alt="微信图片_20180924130124"></p><h3 id="1-4-完成"><a href="#1-4-完成" class="headerlink" title="1.4 完成"></a>1.4 完成</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/33.png" alt="微信图片_20180924130127"></p><h2 id="2、下载安装xshell，并新建配置"><a href="#2、下载安装xshell，并新建配置" class="headerlink" title="2、下载安装xshell，并新建配置"></a>2、下载安装xshell，并新建配置</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/34.png" alt="微信图片_20180924130339"></p><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/35.png" alt="微信图片_20180924130341"></p><p>输入<code>wget--no-check-certificate -O shadowsocks-libev_CN.shhttps://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocks-libev_CN.sh&amp;&amp; bash shadowsocks-libev_CN.sh</code></p><p>输入<code>1</code>进行安装</p><p>依次设定ss密码和ss端口以及ss加密</p><p>进行配置</p><h2 id="3、配置成功"><a href="#3、配置成功" class="headerlink" title="3、配置成功"></a>3、配置成功</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/36.png" alt="微信图片_20180924130103"></p><h2 id="4、使用ss进行试验，输入ip，端口，密码"><a href="#4、使用ss进行试验，输入ip，端口，密码" class="headerlink" title="4、使用ss进行试验，输入ip，端口，密码"></a>4、使用ss进行试验，输入ip，端口，密码</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/37.png" alt="微信图片_20180924131934"></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;vps搭建&quot;&gt;&lt;a href=&quot;#vps搭建&quot; class=&quot;headerlink&quot; title=&quot;vps搭建&quot;&gt;&lt;/a&gt;vps搭建&lt;/h1&gt;&lt;h2 id=&quot;1、租用一个国外的vps服务器（我选择了vultr）&quot;&gt;&lt;a href=&quot;#1、租用一个国外的vps服务器
-      
-    
-    </summary>
-    
-    
-      <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
-    
-  </entry>
-  
-  <entry>
     <title>搭建个人博客</title>
     <link href="http://yoursite.com/2018/09/25/%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>http://yoursite.com/2018/09/25/搭建个人博客/</id>
@@ -128,6 +149,29 @@
     
     
       <category term="博客" scheme="http://yoursite.com/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搭建vps</title>
+    <link href="http://yoursite.com/2018/09/25/%E6%90%AD%E5%BB%BAvps/"/>
+    <id>http://yoursite.com/2018/09/25/搭建vps/</id>
+    <published>2018-09-25T13:14:34.000Z</published>
+    <updated>2019-04-16T16:19:14.760Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vps搭建"><a href="#vps搭建" class="headerlink" title="vps搭建"></a>vps搭建</h1><h2 id="1、租用一个国外的vps服务器（我选择了vultr）"><a href="#1、租用一个国外的vps服务器（我选择了vultr）" class="headerlink" title="1、租用一个国外的vps服务器（我选择了vultr）"></a>1、租用一个国外的vps服务器（我选择了vultr）</h2><h3 id="1-2、选择服务器位置（我选了最近的东京）"><a href="#1-2、选择服务器位置（我选了最近的东京）" class="headerlink" title="1.2、选择服务器位置（我选了最近的东京）"></a>1.2、选择服务器位置（我选了最近的东京）</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/30.png" alt="微信图片_20180924130119"></p><h3 id="1-2-系统根据网上信息选择了插件兼容度最高的centos"><a href="#1-2-系统根据网上信息选择了插件兼容度最高的centos" class="headerlink" title="1.2 系统根据网上信息选择了插件兼容度最高的centos"></a>1.2 系统根据网上信息选择了插件兼容度最高的centos</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/31.png" alt="微信图片_20180924130122"></p><h3 id="1-3-给主机命名"><a href="#1-3-给主机命名" class="headerlink" title="1.3 给主机命名"></a>1.3 给主机命名</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/32.png" alt="微信图片_20180924130124"></p><h3 id="1-4-完成"><a href="#1-4-完成" class="headerlink" title="1.4 完成"></a>1.4 完成</h3><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/33.png" alt="微信图片_20180924130127"></p><h2 id="2、下载安装xshell，并新建配置"><a href="#2、下载安装xshell，并新建配置" class="headerlink" title="2、下载安装xshell，并新建配置"></a>2、下载安装xshell，并新建配置</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/34.png" alt="微信图片_20180924130339"></p><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/35.png" alt="微信图片_20180924130341"></p><p>输入<code>wget--no-check-certificate -O shadowsocks-libev_CN.shhttps://raw.githubusercontent.com/uxh/shadowsocks_bash/master/shadowsocks-libev_CN.sh&amp;&amp; bash shadowsocks-libev_CN.sh</code></p><p>输入<code>1</code>进行安装</p><p>依次设定ss密码和ss端口以及ss加密</p><p>进行配置</p><h2 id="3、配置成功"><a href="#3、配置成功" class="headerlink" title="3、配置成功"></a>3、配置成功</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/36.png" alt="微信图片_20180924130103"></p><h2 id="4、使用ss进行试验，输入ip，端口，密码"><a href="#4、使用ss进行试验，输入ip，端口，密码" class="headerlink" title="4、使用ss进行试验，输入ip，端口，密码"></a>4、使用ss进行试验，输入ip，端口，密码</h2><p><img src="https://github.com/d1lute/d1lute.repository/raw/master/pictureForFirstMD/37.png" alt="微信图片_20180924131934"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;vps搭建&quot;&gt;&lt;a href=&quot;#vps搭建&quot; class=&quot;headerlink&quot; title=&quot;vps搭建&quot;&gt;&lt;/a&gt;vps搭建&lt;/h1&gt;&lt;h2 id=&quot;1、租用一个国外的vps服务器（我选择了vultr）&quot;&gt;&lt;a href=&quot;#1、租用一个国外的vps服务器
+      
+    
+    </summary>
+    
+    
+      <category term="服务器" scheme="http://yoursite.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
     
   </entry>
   
